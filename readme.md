@@ -1,12 +1,26 @@
 # Powerslave EX Linux
 Quick-and-dirty build system to get Linux binaries out of the old Powerslave EX
 source code. Since Angelscript and FFmpeg broke their API in the meantime,
-this will get and build old source releases as well.
+this will get and build old source releases of these libraries as well.
 
 ## Building
+You will need the following development packages:
+ - SDL2
+ - OpenAL
+ - libvorbis
+ - libogg
+ - libpng
+ - zlib
+
+Old versions of Angelscript and FFmpeg must be compiled like this:
+(you do not need to install them, they will be used locally without issue)
 ```
 make lib
-make -j16
+```
+
+Then simply build the game:
+```
+make
 ```
 
 ## Game files
@@ -22,5 +36,5 @@ You will need:
 
 ## Running
 ```
-./bin/run.sh
+make run
 ```
