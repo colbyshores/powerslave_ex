@@ -69,6 +69,9 @@ obj/%.o: %.cpp
 lib:
 	@./make/lib.sh
 
+run: bin/$(NAME)
+	@./bin/run.sh
+
 clean:
 	@echo "cleaning"
 	rm -rf bin obj
