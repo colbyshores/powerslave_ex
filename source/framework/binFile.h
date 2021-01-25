@@ -31,6 +31,7 @@ public:
     bool                OpenExternal(const char *file);
     bool                OpenStream(const char *file);
     bool                Create(const char *file);
+    void                ResetHandle(void);
     void                Close(void);
     int                 Length(void);
 

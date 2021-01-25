@@ -110,6 +110,27 @@ bool kexBinFile::Create(const char *file)
 }
 
 //
+// kexBinFile::ResetHandle
+//
+
+void kexBinFile::ResetHandle(void)
+{
+    if(bOpened == false)
+    {
+        return;
+    }
+
+    if (buffer)
+    {
+        Mem_Free(buffer);
+    }
+
+    handle = nullptr;
+    bOpened = false;
+}
+
+
+//
 // kexBinFile::Close
 //
 

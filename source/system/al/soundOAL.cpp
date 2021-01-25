@@ -389,7 +389,7 @@ kexOggFile::~kexOggFile(void)
     if(binFile)
     {
         ov_clear(&oggFile);
-        binFile->Close();
+        binFile->ResetHandle();
 
         delete binFile;
         binFile = NULL;
