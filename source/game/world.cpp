@@ -79,7 +79,8 @@ void kexWorld::ReadTextures(kexBinFile &mapfile, const unsigned int count)
             str += c;
         }
 
-        skyTexture = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_NEAREST);
+	//skyTexture = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_NEAREST); //REVISED
+	skyTexture = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_LINEAR);
     }
     else
     {
@@ -108,7 +109,8 @@ void kexWorld::ReadTextures(kexBinFile &mapfile, const unsigned int count)
                 str += c;
             }
 
-            textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_NEAREST);
+            //textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_NEAREST); //REVISED
+	    textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_LINEAR);
 
             if((dict = kexGame::cLocal->AnimPicDefs().GetEntry(str.c_str())))
             {
@@ -141,7 +143,8 @@ void kexWorld::ReadTextures(kexBinFile &mapfile, const unsigned int count)
                     for(uint j = 0; j < pics.Length(); ++j)
                     {
                         animPics[i].textures[j+1] =
-                            kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, TF_NEAREST);
+                            //kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, TF_NEAREST); //REVISED
+			    kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, TF_LINEAR);
                     }
                 }
             }

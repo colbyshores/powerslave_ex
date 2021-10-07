@@ -178,7 +178,8 @@ void kexRenderScreen::DrawTexture(kexTexture *texture, const float x, const floa
 void kexRenderScreen::DrawTexture(const char *name, const float x, const float y,
                                   const float fixedWidth, const float fixedHeight)
 {
-    kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_NEAREST);
+    //kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_NEAREST); //REVISED
+    kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_LINEAR);
     DrawTexture(texture, x, y, fixedWidth, fixedHeight);
 }
 
@@ -216,7 +217,8 @@ void kexRenderScreen::DrawStretchPic(kexTexture *texture, const float x, const f
 void kexRenderScreen::DrawStretchPic(const char *name, const float x, const float y,
                                      const float width, const float height)
 {
-    kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_NEAREST);
+    //kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_NEAREST); //REVISED
+    kexTexture *texture = kexRender::cTextures->Cache(name, TC_CLAMP, TF_LINEAR);
     DrawStretchPic(texture, x, y, width, height);
 }
 

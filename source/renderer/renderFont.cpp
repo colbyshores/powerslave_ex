@@ -104,7 +104,9 @@ void kexFont::LoadKFont(const char *file)
         if(lexer->Matches("texture"))
         {
             lexer->GetString();
-            texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, TF_NEAREST);
+	    //texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, TF_NEAREST);
+             texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, TF_LINEAR);
+
             
             if(!texture)
             {

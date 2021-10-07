@@ -51,7 +51,8 @@ void kexSprite::LoadTexture(void)
 {
     if(texture == NULL)
     {
-        if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, TF_NEAREST)))
+        //if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, TF_NEAREST))) #REVISED
+        if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, TF_LINEAR)))
         {
             texture = kexRender::cTextures->defaultTexture;
         }

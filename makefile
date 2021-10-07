@@ -3,6 +3,12 @@ CXX=clang
 FLAGS ="-std=c++11"
 FLAGS+="-fpermissive"
 FLAGS+="-w"
+
+
+
+#for GNUC compilers - disable optimizations that have alot of pointer casts
+FLAGS+="-fno-strict-aliasing"
+FLAGS+="-static"
 FFMPEG_VERSION="n2.7.2"
 
 INCL ="-Isource"
@@ -20,8 +26,12 @@ INCL+="-Isource/system/sdl"
 INCL+="-Isource/tools"
 INCL+="-Isource/tools/mapEditor"
 
+
+
 INCL+="-Ilib/angelscript/sdk/angelscript/include"
 INCL+="-Ilib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)"
+
+INCL+="-I/usr/include/SDL2"
 
 LINK ="-lm"
 LINK+="-lpthread"
