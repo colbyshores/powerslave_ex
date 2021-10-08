@@ -20,6 +20,8 @@
 #include "mover.h"
 #include "renderScene.h"
 
+#include "filter.h"
+
 static kexWorld worldLocal;
 kexWorld *kexGame::cWorld = &worldLocal;
 
@@ -109,8 +111,7 @@ void kexWorld::ReadTextures(kexBinFile &mapfile, const unsigned int count)
                 str += c;
             }
 
-            //textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_NEAREST); //REVISED
-	    textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, TF_LINEAR);
+    	    textures[i] = kexRender::cTextures->Cache(str.c_str(), TC_REPEAT, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR);
 
             if((dict = kexGame::cLocal->AnimPicDefs().GetEntry(str.c_str())))
             {
@@ -143,8 +144,7 @@ void kexWorld::ReadTextures(kexBinFile &mapfile, const unsigned int count)
                     for(uint j = 0; j < pics.Length(); ++j)
                     {
                         animPics[i].textures[j+1] =
-                            //kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, TF_NEAREST); //REVISED
-			    kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, TF_LINEAR);
+                        kexRender::cTextures->Cache(pics[j].c_str(), TC_REPEAT, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
                     }
                 }
             }

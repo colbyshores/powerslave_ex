@@ -18,6 +18,7 @@
 #include "kexlib.h"
 #include "renderMain.h"
 #include "movie.h"
+#include "filter.h" //V2
 
 extern "C"
 {
@@ -1054,7 +1055,7 @@ FF_ENABLE_DEPRECATION_WARNINGS
     texture.Width() = reqWidth;
     texture.Height() = reqHeight;
 
-    texture.Upload(videoBuffer, TC_CLAMP, TF_LINEAR);
+    texture.Upload(videoBuffer, TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
 
     swsCtx = sws_getContext(videoCodecCtx->width,
                             videoCodecCtx->height,

@@ -1,3 +1,7 @@
  2783  grep -r 'TF_NEAREST' .
  2784  grep -r 'TF_LINEAR' .
 
+
+
+end: 10/7/21
+pick up on renderer/textureObject.cpp debugging

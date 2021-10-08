@@ -55,8 +55,7 @@ void kexTextureManager::CreateWhiteTexture(void)
     whiteTexture->width = 4;
     whiteTexture->height = 4;
 
-    //whiteTexture->Upload(rgb, TC_CLAMP, TF_NEAREST); //REVISED
-    whiteTexture->Upload(rgb, TC_CLAMP, TF_LINEAR);
+    whiteTexture->Upload(rgb, TC_CLAMP, TF_NEAREST);
 }
 
 //
@@ -90,8 +89,7 @@ void kexTextureManager::CreateDefaultTexture(void)
     defaultTexture->width = 64;
     defaultTexture->height = 64;
 
-    //defaultTexture->Upload(rgb, TC_CLAMP, TF_NEAREST); //REVISED
-    defaultTexture->Upload(rgb, TC_CLAMP, TF_LINEAR);
+    defaultTexture->Upload(rgb, TC_CLAMP, TF_NEAREST);
 
 }
 
@@ -125,7 +123,7 @@ void kexTextureManager::CreateLightTexture(void)
         }
     }
 
-    lightTexture->Upload(rgb, TC_CLAMP, TF_LINEAR);
+    lightTexture->Upload(rgb, TC_CLAMP, TF_NEAREST);
 }
 
 //

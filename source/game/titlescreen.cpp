@@ -19,6 +19,7 @@
 #include "renderMain.h"
 #include "game.h"
 #include "titlescreen.h"
+#include "filter.h" //V2
 
 //-----------------------------------------------------------------------------
 //
@@ -621,8 +622,7 @@ kexTitleScreen::~kexTitleScreen(void)
 
 void kexTitleScreen::Init(void)
 {
-    //titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, TF_NEAREST); #REVISITED
-    titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, TF_LINEAR);
+    titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR);  //V2
 }
 
 //

@@ -33,6 +33,7 @@
 #include "localization.h"
 #include "mapEditor.h"
 #include "dlightObj.h"
+#include "filter.h" //V2
 
 static kexGameLocal gameLocal;
 kexGameLoop *kex::cGame = &gameLocal;
@@ -582,8 +583,7 @@ void kexGameLocal::Start(void)
 
     smallFont   = kexFont::Alloc("smallfont");
     bigFont     = kexFont::Alloc("bigfont");
-    //loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, TF_LINEAR);
+    loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
 
     kexRender::cBackend->ClearBuffer();
     kexRender::cScreen->SetOrtho();

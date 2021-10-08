@@ -18,6 +18,7 @@
 #include "kexlib.h"
 #include "renderMain.h"
 #include "game.h"
+#include "filter.h"
 
 //-----------------------------------------------------------------------------
 //
@@ -51,8 +52,7 @@ void kexSprite::LoadTexture(void)
 {
     if(texture == NULL)
     {
-        //if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, TF_NEAREST))) #REVISED
-        if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, TF_LINEAR)))
+        if(!(texture = kexRender::cTextures->Cache(textureFile.c_str(), TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR))) //V2
         {
             texture = kexRender::cTextures->defaultTexture;
         }

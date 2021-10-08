@@ -19,6 +19,7 @@
 #include "game.h"
 #include "renderMain.h"
 #include "menuPanel.h"
+#include "filter.h"
 
 static kexMenuPanel menuPanelLocal;
 kexMenuPanel *kexGame::cMenuPanel = &menuPanelLocal;
@@ -45,19 +46,11 @@ kexMenuPanel::~kexMenuPanel(void)
 
 void kexMenuPanel::Init(void)
 {
-    /*
-    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST); //REVISITED
-    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    */
-
-    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_LINEAR);
-    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, TF_LINEAR);
-    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, TF_LINEAR);
-    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, TF_LINEAR);
-    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, TF_LINEAR);
+    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
 
     font = kexFont::Alloc("smallfont");
 }

@@ -21,6 +21,7 @@
 #include "overWorld.h"
 #include "localization.h"
 #include "playerCmd.h"
+#include "filter.h" //V2
 
 //
 // kexOverWorld::kexOverWorld
@@ -68,8 +69,7 @@ void kexOverWorld::Start(void)
         kexGame::cLocal->SetGameState(GS_TITLE);
         return;
     }
-    //pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, TF_NEAREST); // REVISITED
-    pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, TF_LINEAR);
+    pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
 
     kex::cInput->ToggleMouseGrab(false);
     kex::cSession->ToggleCursor(true);

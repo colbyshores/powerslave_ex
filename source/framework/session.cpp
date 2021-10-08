@@ -135,8 +135,7 @@ void kexSession::DrawCursor(void)
 
 void kexSession::InitCursor(void)
 {
-    //cursorTexture = kexRender::cTextures->Cache("gfx/cursor.png", TC_CLAMP, TF_NEAREST);  //REVISITED
-    cursorTexture = kexRender::cTextures->Cache("gfx/cursor.png", TC_CLAMP, TF_LINEAR);
+    cursorTexture = kexRender::cTextures->Cache("gfx/cursor.png", TC_CLAMP, TF_NEAREST);
     bShowCursor = true;
 }
 

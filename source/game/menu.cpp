@@ -22,6 +22,7 @@
 #include "overWorld.h"
 #include "titlescreen.h"
 #include "localization.h"
+#include "filter.h" //V2
 
 #define ALLOC_MENU_OBJECT(className)    static_cast<className*>(AllocateMenuObject(#className))
 
@@ -812,8 +813,7 @@ kexMenuObjectSaveInfoPanel::kexMenuObjectSaveInfoPanel(void)
     for(int i = 0; i < 6; ++i)
     {
         str = kexStr("gfx/menu/menuartifact_") + i + kexStr(".png");
-        //artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); //REVISITED
-        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
+        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
     }
 
     h = 32;

@@ -19,6 +19,7 @@
 #include "game.h"
 #include "renderMain.h"
 #include "hud.h"
+#include "filter.h" //V2
 
 //
 // kexHud::kexHud
@@ -48,21 +49,14 @@ kexHud::~kexHud(void)
 void kexHud::Init(void)
 {
 
-    backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_NEAREST); //- KEEP TF_NEAREST -- TF_LINEAR HAS ARTIFACTING
-    //airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    //airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    //fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST); //REVISITED
-    //dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    //vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, TF_NEAREST); //REVISITED
-    //crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_NEAREST); //V2 - KEEP TF_NEAREST -- TF_LINEAR HAS ARTIFACTING
 
-    //backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_LINEAR);  //graphic alignment artifacting
-    airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, TF_LINEAR);
-    airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, TF_LINEAR);
-    fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_LINEAR);
-    dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, TF_LINEAR);
-    vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, TF_LINEAR);
-    crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, TF_LINEAR);
+    airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
+    crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
 }
 
 //

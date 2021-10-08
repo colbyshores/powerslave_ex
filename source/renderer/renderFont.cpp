@@ -17,6 +17,7 @@
 
 #include "renderMain.h"
 #include "renderFont.h"
+#include "filter.h" //V2
 
 kexHashList<kexFont> kexFont::fontList;
 
@@ -104,9 +105,7 @@ void kexFont::LoadKFont(const char *file)
         if(lexer->Matches("texture"))
         {
             lexer->GetString();
-	    //texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, TF_NEAREST);
-             texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, TF_LINEAR);
-
+            texture = kexRender::cTextures->Cache(lexer->StringToken(), TC_CLAMP, (cvarGLFilter.GetBool() == 0) ? TF_NEAREST:TF_LINEAR); //V2
             
             if(!texture)
             {
