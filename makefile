@@ -66,9 +66,7 @@ bin/$(NAME): $(OBJS) lib/angelscript/sdk/angelscript/lib/libangelscript.a
 	@cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libavformat/libavformat.so $(@D)/shared
 	@cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libswscale/libswscale.so $(@D)/shared
 	@cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libswresample/libswresample.so $(@D)/shared
-	@cp -rT game_data bin/
-	@mkdir $(@D)/mods
-	@mkdir $(@D)/saves
+	@cp -R game_data/powerslave_ex/* bin/
 	@cp make/run.sh $(@D)
 
 obj/%.o: %.cpp
