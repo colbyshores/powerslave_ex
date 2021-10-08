@@ -47,13 +47,22 @@ kexHud::~kexHud(void)
 
 void kexHud::Init(void)
 {
-    backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_NEAREST);
-    airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, TF_NEAREST);
-    airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, TF_NEAREST);
-    fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST);
-    dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, TF_NEAREST);
-    vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, TF_NEAREST);
-    crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, TF_NEAREST);
+
+    backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_NEAREST); //- KEEP TF_NEAREST -- TF_LINEAR HAS ARTIFACTING
+    //airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST); //REVISITED
+    //dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, TF_NEAREST); //REVISITED
+
+    //backImage       = kexRender::cTextures->Cache("gfx/hud.png", TC_CLAMP, TF_LINEAR);  //graphic alignment artifacting
+    airSupplyFront  = kexRender::cTextures->Cache("gfx/airsupply_front.png", TC_CLAMP, TF_LINEAR);
+    airSupplyBack   = kexRender::cTextures->Cache("gfx/airsupply_back.png", TC_CLAMP, TF_LINEAR);
+    fillPic         = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_LINEAR);
+    dolphinPic      = kexRender::cTextures->Cache("gfx/dolphin.png", TC_CLAMP, TF_LINEAR);
+    vulturePic      = kexRender::cTextures->Cache("gfx/vulture.png", TC_CLAMP, TF_LINEAR);
+    crossHairPic    = kexRender::cTextures->Cache("gfx/crosshair.png", TC_CLAMP, TF_LINEAR);
 }
 
 //

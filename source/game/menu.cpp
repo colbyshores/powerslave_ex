@@ -812,7 +812,8 @@ kexMenuObjectSaveInfoPanel::kexMenuObjectSaveInfoPanel(void)
     for(int i = 0; i < 6; ++i)
     {
         str = kexStr("gfx/menu/menuartifact_") + i + kexStr(".png");
-        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST);
+        //artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); //REVISITED
+        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
     }
 
     h = 32;

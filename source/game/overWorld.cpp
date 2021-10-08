@@ -68,8 +68,8 @@ void kexOverWorld::Start(void)
         kexGame::cLocal->SetGameState(GS_TITLE);
         return;
     }
-
-    pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, TF_NEAREST);
+    //pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, TF_NEAREST); // REVISITED
+    pic.LoadFromFile("gfx/overworld.png", TC_CLAMP, TF_LINEAR);
 
     kex::cInput->ToggleMouseGrab(false);
     kex::cSession->ToggleCursor(true);

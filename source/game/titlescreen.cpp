@@ -621,7 +621,8 @@ kexTitleScreen::~kexTitleScreen(void)
 
 void kexTitleScreen::Init(void)
 {
-    titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, TF_NEAREST);
+    //titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, TF_NEAREST); #REVISITED
+    titlePic = kexRender::cTextures->Cache("gfx/title.png", TC_CLAMP, TF_LINEAR);
 }
 
 //

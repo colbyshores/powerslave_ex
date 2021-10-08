@@ -62,32 +62,42 @@ void kexInventoryMenu::Init(void)
         for(int j = 0; j < 2; ++j)
         {
             str = kexStr("gfx/menu/menukey_") + i + kexStr("_") + j + kexStr(".png");
-            keyTextures[j][i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST);
+            //keyTextures[j][i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); //REVISITED
+            keyTextures[j][i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
         }
     }
 
     for(int i = 0; i < NUM_ARTIFACTS; ++i)
     {
         str = kexStr("gfx/menu/menuartifact_") + i + kexStr(".png");
-        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST);
+        //artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); //REVISITED
+        artifactTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
     }
 
     for(int i = 0; i < NUMPLAYERWEAPONS; ++i)
     {
         str = kexStr("gfx/menu/menuweapon_") + i + kexStr(".png");
-        weaponTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST);
+        //weaponTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); //REVISITED
+        weaponTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
     }
 
     for(int i = 0; i < 8; ++i)
     {
         str = kexStr("gfx/menu/menutransmitter_") + i + kexStr(".png");
-        questTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST);
+        //questTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_NEAREST); // REVISITED
+        questTextures[i] = kexRender::cTextures->Cache(str, TC_CLAMP, TF_LINEAR);
     }
 
-    teamDollTexture = kexRender::cTextures->Cache("gfx/menu/menuteamdoll.png", TC_CLAMP, TF_NEAREST);
-    questCompleted = kexRender::cTextures->Cache("gfx/menu/menutransmitter_on.png", TC_CLAMP, TF_NEAREST);
-    mapClosedTexture = kexRender::cTextures->Cache("gfx/menu/menumap_closed.png", TC_CLAMP, TF_NEAREST);
-    mapOpenTexture = kexRender::cTextures->Cache("gfx/menu/menumap_open.png", TC_CLAMP, TF_NEAREST);
+    //teamDollTexture = kexRender::cTextures->Cache("gfx/menu/menuteamdoll.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //questCompleted = kexRender::cTextures->Cache("gfx/menu/menutransmitter_on.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //mapClosedTexture = kexRender::cTextures->Cache("gfx/menu/menumap_closed.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    //mapOpenTexture = kexRender::cTextures->Cache("gfx/menu/menumap_open.png", TC_CLAMP, TF_NEAREST); //REVISITED
+
+
+    teamDollTexture = kexRender::cTextures->Cache("gfx/menu/menuteamdoll.png", TC_CLAMP, TF_LINEAR);
+    questCompleted = kexRender::cTextures->Cache("gfx/menu/menutransmitter_on.png", TC_CLAMP, TF_LINEAR);
+    mapClosedTexture = kexRender::cTextures->Cache("gfx/menu/menumap_closed.png", TC_CLAMP, TF_LINEAR);
+    mapOpenTexture = kexRender::cTextures->Cache("gfx/menu/menumap_open.png", TC_CLAMP, TF_LINEAR);
     
     for(int i = 0; i < 4; ++i)
     {

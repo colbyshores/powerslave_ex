@@ -45,11 +45,19 @@ kexMenuPanel::~kexMenuPanel(void)
 
 void kexMenuPanel::Init(void)
 {
-    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST);
-    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, TF_NEAREST);
-    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, TF_NEAREST);
-    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, TF_NEAREST);
-    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, TF_NEAREST);
+    /*
+    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_NEAREST); //REVISITED
+    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    */
+
+    bgTexture = kexRender::cTextures->Cache("gfx/menu/menu_bg.png", TC_REPEAT, TF_LINEAR);
+    buttonTexture[0] = kexRender::cTextures->Cache("gfx/menu/menubutton_up.png", TC_CLAMP, TF_LINEAR);
+    buttonTexture[1] = kexRender::cTextures->Cache("gfx/menu/menubutton_down.png", TC_CLAMP, TF_LINEAR);
+    arrows[0] = kexRender::cTextures->Cache("gfx/menu/menuarrow_left.png", TC_CLAMP, TF_LINEAR);
+    arrows[1] = kexRender::cTextures->Cache("gfx/menu/menuarrow_right.png", TC_CLAMP, TF_LINEAR);
 
     font = kexFont::Alloc("smallfont");
 }

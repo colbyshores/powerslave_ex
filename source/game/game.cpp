@@ -582,8 +582,8 @@ void kexGameLocal::Start(void)
 
     smallFont   = kexFont::Alloc("smallfont");
     bigFont     = kexFont::Alloc("bigfont");
-
-    loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, TF_NEAREST);
+    //loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, TF_NEAREST); //REVISITED
+    loadingPic.LoadFromFile("gfx/loadback.png", TC_CLAMP, TF_LINEAR);
 
     kexRender::cBackend->ClearBuffer();
     kexRender::cScreen->SetOrtho();
