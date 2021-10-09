@@ -22,3 +22,4 @@ lib/ffmpeg/FFmpeg-n2.7.2/libavutil/*.o
 lib/ffmpeg/FFmpeg-n2.7.2/libpostproc/*.o
 lib/ffmpeg/FFmpeg-n2.7.2/libswresample/*.o
 lib/ffmpeg/FFmpeg-n2.7.2/libswscale/*.o
+lib/ffmpeg/FFmpeg-n2.7.2/a.out
