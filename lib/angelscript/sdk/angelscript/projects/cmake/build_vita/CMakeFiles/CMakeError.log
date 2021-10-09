@@ -1,0 +1,60 @@
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_0b49e/fast && /usr/bin/make -f CMakeFiles/cmTC_0b49e.dir/build.make CMakeFiles/cmTC_0b49e.dir/build
+make[1]: Entering directory '/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0b49e.dir/src.c.obj
+/usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_0b49e.dir/src.c.obj   -c /home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_0b49e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0b49e.dir/link.txt --verbose=1
+/usr/local/vitasdk/bin/arm-vita-eabi-gcc  -Wl,-q -DCMAKE_HAVE_LIBC_PTHREAD  -Wl,-z,nocopyreloc  CMakeFiles/cmTC_0b49e.dir/src.c.obj  -o cmTC_0b49e 
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: CMakeFiles/cmTC_0b49e.dir/src.c.obj: in function `main':
+src.c:(.text+0x2a): undefined reference to `pthread_create'
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: src.c:(.text+0x32): undefined reference to `pthread_detach'
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: src.c:(.text+0x3c): undefined reference to `pthread_join'
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: src.c:(.text+0x46): undefined reference to `pthread_atfork'
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: src.c:(.text+0x4c): undefined reference to `pthread_exit'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_0b49e.dir/build.make:87: cmTC_0b49e] Error 1
+make[1]: Leaving directory '/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_0b49e/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_41c5e/fast && /usr/bin/make -f CMakeFiles/cmTC_41c5e.dir/build.make CMakeFiles/cmTC_41c5e.dir/build
+make[1]: Entering directory '/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_41c5e.dir/CheckFunctionExists.c.obj
+/usr/local/vitasdk/bin/arm-vita-eabi-gcc   -Wl,-q -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_41c5e.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_41c5e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_41c5e.dir/link.txt --verbose=1
+/usr/local/vitasdk/bin/arm-vita-eabi-gcc  -Wl,-q -DCHECK_FUNCTION_EXISTS=pthread_create  -Wl,-z,nocopyreloc  CMakeFiles/cmTC_41c5e.dir/CheckFunctionExists.c.obj  -o cmTC_41c5e  -lpthreads 
+/usr/local/vitasdk/bin/../lib/gcc/arm-vita-eabi/10.3.0/../../../../arm-vita-eabi/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_41c5e.dir/build.make:87: cmTC_41c5e] Error 1
+make[1]: Leaving directory '/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_41c5e/fast] Error 2
+
+
+

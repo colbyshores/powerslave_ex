@@ -1,0 +1,6 @@
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/rebuild_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/edit_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/CMakeFiles/Angelscript.dir
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/game/CMakeFiles/rebuild_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/game/CMakeFiles/edit_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/sdk/angelscript/projects/cmake/build_vita/game/CMakeFiles/game.dir

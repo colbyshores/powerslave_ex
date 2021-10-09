@@ -1,5 +1,6 @@
 NAME=powerslave_ex
-CXX=clang
+#CXX=clang
+CXX=arm-vita-eabi-gcc
 FLAGS ="-std=c++11"
 FLAGS+="-fpermissive"
 FLAGS+="-w"
@@ -31,7 +32,11 @@ INCL+="-Isource/tools/mapEditor"
 INCL+="-Ilib/angelscript/sdk/angelscript/include"
 INCL+="-Ilib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)"
 
-INCL+="-I/usr/include/SDL2"
+ifdef VITA
+	INCL+="-I/usr/local/vitasdk/arm-vita-eabi/include/SDL2/"
+else
+	INCL+="-I/usr/include/SDL2"
+endif
 
 LINK ="-lm"
 LINK+="-lpthread"
