@@ -7,7 +7,7 @@ CXX=/usr/local/vitasdk/bin/arm-vita-eabi-g++
 FLAGS ="-std=gnu++11"
 
 #ifdef VITA
-+FLAGS ="-Wl,-q -O2 -ftree-vectorize -fomit-frame-pointer -ffast-math -D_BSD_SOURCE -mcpu=cortex-a9 -fomit-frame-pointer -mthumb -pthread -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wno-pointer-to-int-cast -Wstrict-prototypes -Wempty-body -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -Os -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=format-security -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=vla -Wformat -fdiagnostics-color=auto -Wno-maybe-uninitialized fno-rtti -fno-exceptionsi D__STDC_CONSTANT_MACROS"
++FLAGS ="-Wl,-q -O2 -ftree-vectorize -fomit-frame-pointer -ffast-math -mcpu=cortex-a9 -fomit-frame-pointer -mthumb -pthread -Wdeclaration-after-statement -Wall -Wdisabled-optimization -Wpointer-arith -Wredundant-decls -Wwrite-strings -Wtype-limits -Wundef -Wmissing-prototypes -Wno-pointer-to-int-cast -Wstrict-prototypes -Wempty-body -Wno-parentheses -Wno-switch -Wno-format-zero-length -Wno-pointer-sign -Os -fno-math-errno -fno-signed-zeros -fno-tree-vectorize -Werror=format-security -Werror=implicit-function-declaration -Werror=missing-prototypes -Werror=return-type -Werror=vla -Wformat -fdiagnostics-color=auto -Wno-maybe-uninitialized fno-rtti -fno-exceptionsi"
 #endif
 
 FLAGS+="-fpermissive"
@@ -43,8 +43,6 @@ INCL+="-Ilib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)"
 #	INCL+="-I/usr/include/SDL2"
 #endif
 
-LINK ="-lm"
-
 #Modification 10/8/21 to link with vita sdk GL implementation
 #LINK+="-lGL"
 #ifdef VITA
@@ -75,6 +73,7 @@ LINK+="-lswresample"
 
 LINK+="-lstdc++"
 LINK+="-lpthread"
+LINK ="-lm"
 
 OBJS=$(shell make/obj.sh)
 
