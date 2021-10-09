@@ -1,0 +1,43 @@
+pkgname=FFmpeg
+pkgver=n2.7.2
+pkgrel=1
+depends=('lame' 'libvorbis' 'flac' 'opus')
+
+build() {
+  cd $pkgname-$pkgver
+  ./configure   --enable-cross-compile \
+		--cross-prefix=$VITASDK/bin/arm-vita-eabi- \
+		--disable-shared \
+		--disable-runtime-cpudetect \
+		--disable-armv5te \
+		--disable-programs \
+		--disable-doc \
+		--disable-network \
+		--enable-libmp3lame \
+		--disable-everything \
+		--enable-decoder=aac,alac,ape,ac3,flac,mp3,mpeg4,opus,pcm_s16le,pcm_s24le,pcm_s32le,pcm_s8,pcm_u8,tta,vorbis,wmalossless,wavpack \
+		--enable-demuxer=aac,ac3,aiff,ape,asf,avi,caf,flac,matroska,mp3,mp4,m4a,pcm_s16le,pcm_s24le,pcm_s32le,pcm_s8,pcm_u8,ogg,opus,tta,wav,webm,wv \
+		--enable-muxer=aac,ac3,aiff,ape,asf,avi,caf,flac,matroska,mp3,mp4,m4a,pcm_s16le,pcm_s24le,pcm_s32le,pcm_s8,pcm_u8,ogg,opus,tta,wav,webm,wv \
+		--enable-encoder=aac,alac,ape,ac3,flac,libmp3lame,mpeg4,opus,pcm_s16le,pcm_s24le,pcm_s32le,pcm_s8,pcm_u8,tta,vorbis,wmalossless,wavpack \
+		--enable-parser=aac,ac3,flac,h263,mpeg4video,mpegaudio,opus,vorbis \
+		--enable-protocol=file \
+		--enable-static \
+		--enable-small \
+		--disable-debug \
+		--arch=armv7-a \
+		--cpu=cortex-a9 \
+		--disable-armv6t2 \
+		--target-os=none \
+		--extra-cflags=" -Wl,-q -O2 -ftree-vectorize -fomit-frame-pointer -ffast-math -D_BSD_SOURCE" \
+		--extra-cxxflags=" -Wl,-q -O2 -ftree-vectorize -fomit-frame-pointer -ffast-math -fno-rtti -fno-exceptions -std=gnu++11 -D_BSD_SOURCE" \
+		--extra-ldflags=" -L$VITASDK/lib " \
+		--disable-bzlib \
+		--disable-iconv \
+		--disable-lzma \
+		--disable-sdl \
+		--disable-securetransport \
+		--disable-xlib
+  #make -j$(nproc)
+}
+
+build

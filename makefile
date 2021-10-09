@@ -26,22 +26,26 @@ INCL+="-Isource/system"
 INCL+="-Isource/system/sdl"
 INCL+="-Isource/tools"
 INCL+="-Isource/tools/mapEditor"
-
-
-
 INCL+="-Ilib/angelscript/sdk/angelscript/include"
 INCL+="-Ilib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)"
 
-ifdef VITA
-	INCL+="-I/usr/local/vitasdk/arm-vita-eabi/include/SDL2/"
-else
-	INCL+="-I/usr/include/SDL2"
-endif
+#ifdef VITA
+	INCL+="-I/usr/local/vitasdk/arm-vita-eabi/include/"
+#else
+#	INCL+="-I/usr/include/SDL2"
+#endif
 
 LINK ="-lm"
-LINK+="-lpthread"
-LINK+="-lstdc++"
-LINK+="-lGL"
+
+#Modification 10/8/21 to link with vita sdk GL implementation
+#LINK+="-lGL"
+#ifdef VITA
+	LINK+="/usr/local/vitasdk/arm-vita-eabi/lib/libTinyGL.a"
+#else
+	#LINK+="-lGL"
+#endif
+
+
 LINK+="-lpng"
 LINK+="-logg"
 LINK+="-lvorbisfile"
@@ -59,6 +63,10 @@ LINK+="-lavcodec"
 LINK+="-lavformat"
 LINK+="-lswscale"
 LINK+="-lswresample"
+
+
+LINK+="-lstdc++"
+LINK+="-lpthread"
 
 OBJS=$(shell make/obj.sh)
 

@@ -267,6 +267,7 @@ FF_DISABLE_DEPRECATION_WARNINGS
 
 static int GetBufferProc(struct AVCodecContext *c, AVFrame *pic)
 {
+	//Modified
     int ret = avcodec_default_get_buffer(c, pic);
     uint64_t *pts = (uint64_t*)av_malloc(sizeof(uint64_t));
     *pts = moviePlayerLocal.GlobalPTS();
