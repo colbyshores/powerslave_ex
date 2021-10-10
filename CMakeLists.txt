@@ -56,8 +56,10 @@ set(POWERSLAVE_SOURCE
 
 
 if(!VITA)
+	SET(CXX "/usr/bin/g++")
         SET(CMAKE_CXX_FLAGS "-fno-strict-aliasing")
-elseif()
+else()
+	SET(CXX "/usr/local/vitasdk/bin/arm-vita-eabi-g++")
 	SET(CMAKE_CXX_FLAGS "${GCC_VITA_COMPILE_FLAGS} -fno-strict-aliasing")
 endif()
 
@@ -91,34 +93,36 @@ execute_process (
     OUTPUT_VARIABLE OBJS
 )
 
+if(!VITA)
+	file(WRITE "Compile" "cd lib/angelscript/sdk/angelscript/projects/gcc\n")
+else()
+        file(WRITE "Compile" "cd lib/angelscript/sdk/angelscript/projects/cmake/build_vita\n")
+endif()
+
+file(APPEND "Compile" "${CXX} make -j8\n")
+
+if(!VITA)
+	file(APPEND "Compile" "cd ../../../../../lib/ffmpeg/FFmpeg-n2.7.2/\n")
+else()
+	file(APPEND "Compile" "cd ../../../../../../lib/ffmpeg/FFmpeg-n2.7.2/\n")
+	file(APPEND "Compile" "./build_ffmpeg\n")
+endif()
+file(APPEND "Compile" "${CXX} make -j8\n")
 
 
-
-#bin/${NAME}: $(OBJS) lib/angelscript/sdk/angelscript/lib/libangelscript.a
-add_custom_command ( OUTPUT test COMMAND bash -c "${OBJS} lib/angelscript/sdk/angelscript/lib/libangelscript.a")
-
-
-#removed $@ before .o ... adds adds all of a shell scripts cli
-#removed $^
-add_custom_command ( OUTPUT APPEND test COMMAND bash -c "${CXX} $^ -o ${OBJS} lib/angelscript/sdk/angelscript/lib/libangelscript.a $^ ${LINK}")
-
-	#@echo "compiling executable $@"
-	#@mkdir -p $(@D)/shared game_data
-	#@$(CXX) -o $@ $^ $(LINK)
-
+file(APPEND "Compile" "bin/${NAME}: \n\t${OBJS} lib/angelscript/sdk/angelscript/lib/libangelscript.a\n")
+file(APPEND "Compile" "\tcompiling executable $@\n")
+file(APPEND "Compile" "\t@mkdir -p $(@D)/shared game_data\n")
+file(APPEND "Compile" "\t@${CXX} -o $@ $^ ${LINK}\n")
+file(APPEND "Compile" "\t@cp lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil/libavutil.so $(@D)/shared\n")
+file(APPEND "Compile" "\t@cp lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec/libavcodec.so $(@D)/shared\n")
+file(APPEND "Compile" "\t@cp lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat/libavformat.so $(@D)/shared\n")
+file(APPEND "Compile" "\t@cp lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale/libswscale.so $(@D)/shared\n")
+file(APPEND "Compile" "\t@cp lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample/libswresample.so $(@D)/shared\n")
+file(APPEND "Compile" "\t@cp -R game_data/powerslave_ex/* bin/\n")
+file(APPEND "Compile" "\t@cp make/run.sh $(@D)\n")
 
 
-
-
-
-
-	#       @cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libavutil/libavutil.so $(@D)/shared
-	#	@cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libavcodec/libavcodec.so $(@D)/shared
-	#       @cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libavformat/libavformat.so $(@D)/shared
-       	#	@cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libswscale/libswscale.so $(@D)/shared
-	#        @cp lib/ffmpeg/FFmpeg-$(FFMPEG_VERSION)/libswresample/libswresample.so $(@D)/shared
-	#        @cp -R game_data/powerslave_ex/* bin/
-	#        @cp make/run.sh $(@D)
 
 
 
