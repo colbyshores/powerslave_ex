@@ -74,16 +74,14 @@ add_compile_options(
 )
 
 
-
-include("CMakeFiles/powerslave.cmake")
 include("CMakeFiles/angelscript.cmake")
-
-
-
+include("CMakeFiles/powerslave.cmake")
 
 execute_process (
     COMMAND bash -c "make/obj.sh"
     OUTPUT_VARIABLE OBJS
 )
+
+
 
 

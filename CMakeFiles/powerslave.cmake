@@ -194,4 +194,17 @@ set(POWERSLAVE_HEADERS
 )
 
 
+include_directories(ANGELSCRIPT_DIR "${PROJECT_SOURCE_DIR}/lib/angelscript/sdk/angelscript/include")
+include_directories(FFMPEG_DIR "${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}")
+
+
+
+
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil/libavutil.a)
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec/libavcodec.a)
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat/libavformat.a)
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavswscale/libavswscale.a)
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavswresample/libavswresample.a)
+target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/angelscript/lib/angelscript.a)
+add_executable(powerslave_ex STATIC ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR}) 
 

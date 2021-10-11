@@ -215,6 +215,39 @@ Powerslave_BINARY_DIR:STATIC=/home/cole/Documents/GitHub/powerslave_ex
 //Value Computed by CMake
 Powerslave_SOURCE_DIR:STATIC=/home/cole/Documents/GitHub/powerslave_ex
 
+//The directory containing a CMake configuration file for angelscript.
+angelscript_DIR:PATH=angelscript_DIR-NOTFOUND
+
+//Dependencies for the target
+angelscript_LIB_DEPENDS:STATIC=general;-lpthread;
+
+//The directory containing a CMake configuration file for libavcodec.
+libavcodec_DIR:PATH=libavcodec_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavcodec_ROOT.
+libavcodec_ROOT_DIR:PATH=libavcodec_ROOT_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavformat.
+libavformat_DIR:PATH=libavformat_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavformat_ROOT.
+libavformat_ROOT_DIR:PATH=libavformat_ROOT_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavswscale.
+libavswscale_DIR:PATH=libavswscale_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavswscale_ROOT.
+libavswscale_ROOT_DIR:PATH=libavswscale_ROOT_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libavutil.
+libavutil_DIR:PATH=libavutil_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libswresample.
+libswresample_DIR:PATH=libswresample_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for libswresample_root.
+libswresample_root_DIR:PATH=libswresample_root_DIR-NOTFOUND
+
 
 ########################
 # INTERNAL cache entries
@@ -298,6 +331,14 @@ CMAKE_GENERATOR_INSTANCE:INTERNAL=
 CMAKE_GENERATOR_PLATFORM:INTERNAL=
 //Name of generator toolset.
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
+//Test CMAKE_HAVE_LIBC_PTHREAD
+CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=
+//Have library pthreads
+CMAKE_HAVE_PTHREADS_CREATE:INTERNAL=
+//Have library pthread
+CMAKE_HAVE_PTHREAD_CREATE:INTERNAL=1
+//Have include pthread.h
+CMAKE_HAVE_PTHREAD_H:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
 CMAKE_HOME_DIRECTORY:INTERNAL=/home/cole/Documents/GitHub/powerslave_ex
@@ -363,4 +404,6 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Threads
+FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 
