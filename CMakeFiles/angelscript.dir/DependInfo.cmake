@@ -41,6 +41,10 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "ANGELSCRIPT_DIR"
+  "lib/angelscript/sdk/angelscript/include"
+  "FFMPEG_DIR"
+  "lib/ffmpeg/FFmpeg-n2.7.2"
   )
 
 # Targets to which this target links.

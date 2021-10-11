@@ -197,14 +197,50 @@ set(POWERSLAVE_HEADERS
 include_directories(ANGELSCRIPT_DIR "${PROJECT_SOURCE_DIR}/lib/angelscript/sdk/angelscript/include")
 include_directories(FFMPEG_DIR "${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}")
 
+find_library(ANGELSCRIPT_LIB
+	     NAMES libangelscript.a
+	     HINTS ${PROJECT_SOURCE_DIR}/lib/angelscript/lib/
+	     )
 
 
 
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil/libavutil.a)
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec/libavcodec.a)
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat/libavformat.a)
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavswscale/libavswscale.a)
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavswresample/libavswresample.a)
-target_link_libraries(powerslave_ex ${PROJECT_SOURCE_DIR}/lib/angelscript/lib/angelscript.a)
-add_executable(powerslave_ex STATIC ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR}) 
+find_library(AVUTIL_LIB
+             NAMES libavutil.a
+             HINTS  ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil/
+             )
 
+find_library(AVCODEC_LIB
+             NAMES libavcodec.a
+             HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec/
+             )
+
+find_library(AVFORMAT_LIB
+             NAMES libavformat.a
+             HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat/
+             )
+
+find_library(SWSCALE_LIB
+             NAMES libswscale.a
+             HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale/
+             )
+find_library(SWRESAMPLE_LIB
+             NAMES libswresample.a
+             HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample/
+             )
+
+
+
+ 
+ message(STATUS "debug- ${ANGELSCRIPT_LIB}")
+
+
+add_executable(powerslave_ex ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
+
+
+target_link_libraries(powerslave_ex ${ANGELSCRIPT_LIB})
+
+target_link_libraries(powerslave_ex ${AVUTIL_LIB})
+target_link_libraries(powerslave_ex ${AVCODEC_LIB})
+target_link_libraries(powerslave_ex ${AVFORMAT_LIB})
+target_link_libraries(powerslave_ex ${SWSCALE_LIB})
+target_link_libraries(powerslave_ex ${SWRESAMPLE_LIB})

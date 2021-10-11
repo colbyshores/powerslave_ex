@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named powerslave_ex
+
+# Build rule for target.
+powerslave_ex: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 powerslave_ex
+.PHONY : powerslave_ex
+
+# fast build rule for target.
+powerslave_ex/fast:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/build
+.PHONY : powerslave_ex/fast
+
+#=============================================================================
 # Target rules for targets named angelscript
 
 # Build rule for target.
@@ -987,6 +1000,1950 @@ lib/angelscript/source/as_variablescope.cpp.s:
 	$(MAKE) -f CMakeFiles/angelscript.dir/build.make CMakeFiles/angelscript.dir/lib/angelscript/source/as_variablescope.cpp.s
 .PHONY : lib/angelscript/source/as_variablescope.cpp.s
 
+source/framework/actions.o: source/framework/actions.cpp.o
+
+.PHONY : source/framework/actions.o
+
+# target to build an object file
+source/framework/actions.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/actions.cpp.o
+.PHONY : source/framework/actions.cpp.o
+
+source/framework/actions.i: source/framework/actions.cpp.i
+
+.PHONY : source/framework/actions.i
+
+# target to preprocess a source file
+source/framework/actions.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/actions.cpp.i
+.PHONY : source/framework/actions.cpp.i
+
+source/framework/actions.s: source/framework/actions.cpp.s
+
+.PHONY : source/framework/actions.s
+
+# target to generate assembly for a file
+source/framework/actions.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/actions.cpp.s
+.PHONY : source/framework/actions.cpp.s
+
+source/framework/binFile.o: source/framework/binFile.cpp.o
+
+.PHONY : source/framework/binFile.o
+
+# target to build an object file
+source/framework/binFile.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/binFile.cpp.o
+.PHONY : source/framework/binFile.cpp.o
+
+source/framework/binFile.i: source/framework/binFile.cpp.i
+
+.PHONY : source/framework/binFile.i
+
+# target to preprocess a source file
+source/framework/binFile.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/binFile.cpp.i
+.PHONY : source/framework/binFile.cpp.i
+
+source/framework/binFile.s: source/framework/binFile.cpp.s
+
+.PHONY : source/framework/binFile.s
+
+# target to generate assembly for a file
+source/framework/binFile.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/binFile.cpp.s
+.PHONY : source/framework/binFile.cpp.s
+
+source/framework/cmd.o: source/framework/cmd.cpp.o
+
+.PHONY : source/framework/cmd.o
+
+# target to build an object file
+source/framework/cmd.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cmd.cpp.o
+.PHONY : source/framework/cmd.cpp.o
+
+source/framework/cmd.i: source/framework/cmd.cpp.i
+
+.PHONY : source/framework/cmd.i
+
+# target to preprocess a source file
+source/framework/cmd.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cmd.cpp.i
+.PHONY : source/framework/cmd.cpp.i
+
+source/framework/cmd.s: source/framework/cmd.cpp.s
+
+.PHONY : source/framework/cmd.s
+
+# target to generate assembly for a file
+source/framework/cmd.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cmd.cpp.s
+.PHONY : source/framework/cmd.cpp.s
+
+source/framework/console.o: source/framework/console.cpp.o
+
+.PHONY : source/framework/console.o
+
+# target to build an object file
+source/framework/console.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/console.cpp.o
+.PHONY : source/framework/console.cpp.o
+
+source/framework/console.i: source/framework/console.cpp.i
+
+.PHONY : source/framework/console.i
+
+# target to preprocess a source file
+source/framework/console.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/console.cpp.i
+.PHONY : source/framework/console.cpp.i
+
+source/framework/console.s: source/framework/console.cpp.s
+
+.PHONY : source/framework/console.s
+
+# target to generate assembly for a file
+source/framework/console.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/console.cpp.s
+.PHONY : source/framework/console.cpp.s
+
+source/framework/cvar.o: source/framework/cvar.cpp.o
+
+.PHONY : source/framework/cvar.o
+
+# target to build an object file
+source/framework/cvar.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cvar.cpp.o
+.PHONY : source/framework/cvar.cpp.o
+
+source/framework/cvar.i: source/framework/cvar.cpp.i
+
+.PHONY : source/framework/cvar.i
+
+# target to preprocess a source file
+source/framework/cvar.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cvar.cpp.i
+.PHONY : source/framework/cvar.cpp.i
+
+source/framework/cvar.s: source/framework/cvar.cpp.s
+
+.PHONY : source/framework/cvar.s
+
+# target to generate assembly for a file
+source/framework/cvar.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/cvar.cpp.s
+.PHONY : source/framework/cvar.cpp.s
+
+source/framework/defs.o: source/framework/defs.cpp.o
+
+.PHONY : source/framework/defs.o
+
+# target to build an object file
+source/framework/defs.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/defs.cpp.o
+.PHONY : source/framework/defs.cpp.o
+
+source/framework/defs.i: source/framework/defs.cpp.i
+
+.PHONY : source/framework/defs.i
+
+# target to preprocess a source file
+source/framework/defs.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/defs.cpp.i
+.PHONY : source/framework/defs.cpp.i
+
+source/framework/defs.s: source/framework/defs.cpp.s
+
+.PHONY : source/framework/defs.s
+
+# target to generate assembly for a file
+source/framework/defs.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/defs.cpp.s
+.PHONY : source/framework/defs.cpp.s
+
+source/framework/dict.o: source/framework/dict.cpp.o
+
+.PHONY : source/framework/dict.o
+
+# target to build an object file
+source/framework/dict.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/dict.cpp.o
+.PHONY : source/framework/dict.cpp.o
+
+source/framework/dict.i: source/framework/dict.cpp.i
+
+.PHONY : source/framework/dict.i
+
+# target to preprocess a source file
+source/framework/dict.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/dict.cpp.i
+.PHONY : source/framework/dict.cpp.i
+
+source/framework/dict.s: source/framework/dict.cpp.s
+
+.PHONY : source/framework/dict.s
+
+# target to generate assembly for a file
+source/framework/dict.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/dict.cpp.s
+.PHONY : source/framework/dict.cpp.s
+
+source/framework/kpf.o: source/framework/kpf.cpp.o
+
+.PHONY : source/framework/kpf.o
+
+# target to build an object file
+source/framework/kpf.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kpf.cpp.o
+.PHONY : source/framework/kpf.cpp.o
+
+source/framework/kpf.i: source/framework/kpf.cpp.i
+
+.PHONY : source/framework/kpf.i
+
+# target to preprocess a source file
+source/framework/kpf.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kpf.cpp.i
+.PHONY : source/framework/kpf.cpp.i
+
+source/framework/kpf.s: source/framework/kpf.cpp.s
+
+.PHONY : source/framework/kpf.s
+
+# target to generate assembly for a file
+source/framework/kpf.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kpf.cpp.s
+.PHONY : source/framework/kpf.cpp.s
+
+source/framework/kstring.o: source/framework/kstring.cpp.o
+
+.PHONY : source/framework/kstring.o
+
+# target to build an object file
+source/framework/kstring.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kstring.cpp.o
+.PHONY : source/framework/kstring.cpp.o
+
+source/framework/kstring.i: source/framework/kstring.cpp.i
+
+.PHONY : source/framework/kstring.i
+
+# target to preprocess a source file
+source/framework/kstring.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kstring.cpp.i
+.PHONY : source/framework/kstring.cpp.i
+
+source/framework/kstring.s: source/framework/kstring.cpp.s
+
+.PHONY : source/framework/kstring.s
+
+# target to generate assembly for a file
+source/framework/kstring.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/kstring.cpp.s
+.PHONY : source/framework/kstring.cpp.s
+
+source/framework/memHeap.o: source/framework/memHeap.cpp.o
+
+.PHONY : source/framework/memHeap.o
+
+# target to build an object file
+source/framework/memHeap.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/memHeap.cpp.o
+.PHONY : source/framework/memHeap.cpp.o
+
+source/framework/memHeap.i: source/framework/memHeap.cpp.i
+
+.PHONY : source/framework/memHeap.i
+
+# target to preprocess a source file
+source/framework/memHeap.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/memHeap.cpp.i
+.PHONY : source/framework/memHeap.cpp.i
+
+source/framework/memHeap.s: source/framework/memHeap.cpp.s
+
+.PHONY : source/framework/memHeap.s
+
+# target to generate assembly for a file
+source/framework/memHeap.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/memHeap.cpp.s
+.PHONY : source/framework/memHeap.cpp.s
+
+source/framework/object.o: source/framework/object.cpp.o
+
+.PHONY : source/framework/object.o
+
+# target to build an object file
+source/framework/object.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/object.cpp.o
+.PHONY : source/framework/object.cpp.o
+
+source/framework/object.i: source/framework/object.cpp.i
+
+.PHONY : source/framework/object.i
+
+# target to preprocess a source file
+source/framework/object.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/object.cpp.i
+.PHONY : source/framework/object.cpp.i
+
+source/framework/object.s: source/framework/object.cpp.s
+
+.PHONY : source/framework/object.s
+
+# target to generate assembly for a file
+source/framework/object.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/object.cpp.s
+.PHONY : source/framework/object.cpp.s
+
+source/framework/parser.o: source/framework/parser.cpp.o
+
+.PHONY : source/framework/parser.o
+
+# target to build an object file
+source/framework/parser.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/parser.cpp.o
+.PHONY : source/framework/parser.cpp.o
+
+source/framework/parser.i: source/framework/parser.cpp.i
+
+.PHONY : source/framework/parser.i
+
+# target to preprocess a source file
+source/framework/parser.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/parser.cpp.i
+.PHONY : source/framework/parser.cpp.i
+
+source/framework/parser.s: source/framework/parser.cpp.s
+
+.PHONY : source/framework/parser.s
+
+# target to generate assembly for a file
+source/framework/parser.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/parser.cpp.s
+.PHONY : source/framework/parser.cpp.s
+
+source/framework/session.o: source/framework/session.cpp.o
+
+.PHONY : source/framework/session.o
+
+# target to build an object file
+source/framework/session.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/session.cpp.o
+.PHONY : source/framework/session.cpp.o
+
+source/framework/session.i: source/framework/session.cpp.i
+
+.PHONY : source/framework/session.i
+
+# target to preprocess a source file
+source/framework/session.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/session.cpp.i
+.PHONY : source/framework/session.cpp.i
+
+source/framework/session.s: source/framework/session.cpp.s
+
+.PHONY : source/framework/session.s
+
+# target to generate assembly for a file
+source/framework/session.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/session.cpp.s
+.PHONY : source/framework/session.cpp.s
+
+source/framework/unzip.o: source/framework/unzip.cpp.o
+
+.PHONY : source/framework/unzip.o
+
+# target to build an object file
+source/framework/unzip.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/unzip.cpp.o
+.PHONY : source/framework/unzip.cpp.o
+
+source/framework/unzip.i: source/framework/unzip.cpp.i
+
+.PHONY : source/framework/unzip.i
+
+# target to preprocess a source file
+source/framework/unzip.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/unzip.cpp.i
+.PHONY : source/framework/unzip.cpp.i
+
+source/framework/unzip.s: source/framework/unzip.cpp.s
+
+.PHONY : source/framework/unzip.s
+
+# target to generate assembly for a file
+source/framework/unzip.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/framework/unzip.cpp.s
+.PHONY : source/framework/unzip.cpp.s
+
+source/game/actionDef.o: source/game/actionDef.cpp.o
+
+.PHONY : source/game/actionDef.o
+
+# target to build an object file
+source/game/actionDef.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actionDef.cpp.o
+.PHONY : source/game/actionDef.cpp.o
+
+source/game/actionDef.i: source/game/actionDef.cpp.i
+
+.PHONY : source/game/actionDef.i
+
+# target to preprocess a source file
+source/game/actionDef.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actionDef.cpp.i
+.PHONY : source/game/actionDef.cpp.i
+
+source/game/actionDef.s: source/game/actionDef.cpp.s
+
+.PHONY : source/game/actionDef.s
+
+# target to generate assembly for a file
+source/game/actionDef.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actionDef.cpp.s
+.PHONY : source/game/actionDef.cpp.s
+
+source/game/actor.o: source/game/actor.cpp.o
+
+.PHONY : source/game/actor.o
+
+# target to build an object file
+source/game/actor.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actor.cpp.o
+.PHONY : source/game/actor.cpp.o
+
+source/game/actor.i: source/game/actor.cpp.i
+
+.PHONY : source/game/actor.i
+
+# target to preprocess a source file
+source/game/actor.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actor.cpp.i
+.PHONY : source/game/actor.cpp.i
+
+source/game/actor.s: source/game/actor.cpp.s
+
+.PHONY : source/game/actor.s
+
+# target to generate assembly for a file
+source/game/actor.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actor.cpp.s
+.PHONY : source/game/actor.cpp.s
+
+source/game/actorFactory.o: source/game/actorFactory.cpp.o
+
+.PHONY : source/game/actorFactory.o
+
+# target to build an object file
+source/game/actorFactory.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actorFactory.cpp.o
+.PHONY : source/game/actorFactory.cpp.o
+
+source/game/actorFactory.i: source/game/actorFactory.cpp.i
+
+.PHONY : source/game/actorFactory.i
+
+# target to preprocess a source file
+source/game/actorFactory.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actorFactory.cpp.i
+.PHONY : source/game/actorFactory.cpp.i
+
+source/game/actorFactory.s: source/game/actorFactory.cpp.s
+
+.PHONY : source/game/actorFactory.s
+
+# target to generate assembly for a file
+source/game/actorFactory.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/actorFactory.cpp.s
+.PHONY : source/game/actorFactory.cpp.s
+
+source/game/ai.o: source/game/ai.cpp.o
+
+.PHONY : source/game/ai.o
+
+# target to build an object file
+source/game/ai.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/ai.cpp.o
+.PHONY : source/game/ai.cpp.o
+
+source/game/ai.i: source/game/ai.cpp.i
+
+.PHONY : source/game/ai.i
+
+# target to preprocess a source file
+source/game/ai.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/ai.cpp.i
+.PHONY : source/game/ai.cpp.i
+
+source/game/ai.s: source/game/ai.cpp.s
+
+.PHONY : source/game/ai.s
+
+# target to generate assembly for a file
+source/game/ai.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/ai.cpp.s
+.PHONY : source/game/ai.cpp.s
+
+source/game/cmodel.o: source/game/cmodel.cpp.o
+
+.PHONY : source/game/cmodel.o
+
+# target to build an object file
+source/game/cmodel.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/cmodel.cpp.o
+.PHONY : source/game/cmodel.cpp.o
+
+source/game/cmodel.i: source/game/cmodel.cpp.i
+
+.PHONY : source/game/cmodel.i
+
+# target to preprocess a source file
+source/game/cmodel.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/cmodel.cpp.i
+.PHONY : source/game/cmodel.cpp.i
+
+source/game/cmodel.s: source/game/cmodel.cpp.s
+
+.PHONY : source/game/cmodel.s
+
+# target to generate assembly for a file
+source/game/cmodel.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/cmodel.cpp.s
+.PHONY : source/game/cmodel.cpp.s
+
+source/game/dlightObj.o: source/game/dlightObj.cpp.o
+
+.PHONY : source/game/dlightObj.o
+
+# target to build an object file
+source/game/dlightObj.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/dlightObj.cpp.o
+.PHONY : source/game/dlightObj.cpp.o
+
+source/game/dlightObj.i: source/game/dlightObj.cpp.i
+
+.PHONY : source/game/dlightObj.i
+
+# target to preprocess a source file
+source/game/dlightObj.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/dlightObj.cpp.i
+.PHONY : source/game/dlightObj.cpp.i
+
+source/game/dlightObj.s: source/game/dlightObj.cpp.s
+
+.PHONY : source/game/dlightObj.s
+
+# target to generate assembly for a file
+source/game/dlightObj.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/dlightObj.cpp.s
+.PHONY : source/game/dlightObj.cpp.s
+
+source/game/game.o: source/game/game.cpp.o
+
+.PHONY : source/game/game.o
+
+# target to build an object file
+source/game/game.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/game.cpp.o
+.PHONY : source/game/game.cpp.o
+
+source/game/game.i: source/game/game.cpp.i
+
+.PHONY : source/game/game.i
+
+# target to preprocess a source file
+source/game/game.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/game.cpp.i
+.PHONY : source/game/game.cpp.i
+
+source/game/game.s: source/game/game.cpp.s
+
+.PHONY : source/game/game.s
+
+# target to generate assembly for a file
+source/game/game.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/game.cpp.s
+.PHONY : source/game/game.cpp.s
+
+source/game/gameObject.o: source/game/gameObject.cpp.o
+
+.PHONY : source/game/gameObject.o
+
+# target to build an object file
+source/game/gameObject.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/gameObject.cpp.o
+.PHONY : source/game/gameObject.cpp.o
+
+source/game/gameObject.i: source/game/gameObject.cpp.i
+
+.PHONY : source/game/gameObject.i
+
+# target to preprocess a source file
+source/game/gameObject.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/gameObject.cpp.i
+.PHONY : source/game/gameObject.cpp.i
+
+source/game/gameObject.s: source/game/gameObject.cpp.s
+
+.PHONY : source/game/gameObject.s
+
+# target to generate assembly for a file
+source/game/gameObject.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/gameObject.cpp.s
+.PHONY : source/game/gameObject.cpp.s
+
+source/game/hud.o: source/game/hud.cpp.o
+
+.PHONY : source/game/hud.o
+
+# target to build an object file
+source/game/hud.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/hud.cpp.o
+.PHONY : source/game/hud.cpp.o
+
+source/game/hud.i: source/game/hud.cpp.i
+
+.PHONY : source/game/hud.i
+
+# target to preprocess a source file
+source/game/hud.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/hud.cpp.i
+.PHONY : source/game/hud.cpp.i
+
+source/game/hud.s: source/game/hud.cpp.s
+
+.PHONY : source/game/hud.s
+
+# target to generate assembly for a file
+source/game/hud.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/hud.cpp.s
+.PHONY : source/game/hud.cpp.s
+
+source/game/inventoryMenu.o: source/game/inventoryMenu.cpp.o
+
+.PHONY : source/game/inventoryMenu.o
+
+# target to build an object file
+source/game/inventoryMenu.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/inventoryMenu.cpp.o
+.PHONY : source/game/inventoryMenu.cpp.o
+
+source/game/inventoryMenu.i: source/game/inventoryMenu.cpp.i
+
+.PHONY : source/game/inventoryMenu.i
+
+# target to preprocess a source file
+source/game/inventoryMenu.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/inventoryMenu.cpp.i
+.PHONY : source/game/inventoryMenu.cpp.i
+
+source/game/inventoryMenu.s: source/game/inventoryMenu.cpp.s
+
+.PHONY : source/game/inventoryMenu.s
+
+# target to generate assembly for a file
+source/game/inventoryMenu.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/inventoryMenu.cpp.s
+.PHONY : source/game/inventoryMenu.cpp.s
+
+source/game/localization.o: source/game/localization.cpp.o
+
+.PHONY : source/game/localization.o
+
+# target to build an object file
+source/game/localization.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/localization.cpp.o
+.PHONY : source/game/localization.cpp.o
+
+source/game/localization.i: source/game/localization.cpp.i
+
+.PHONY : source/game/localization.i
+
+# target to preprocess a source file
+source/game/localization.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/localization.cpp.i
+.PHONY : source/game/localization.cpp.i
+
+source/game/localization.s: source/game/localization.cpp.s
+
+.PHONY : source/game/localization.s
+
+# target to generate assembly for a file
+source/game/localization.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/localization.cpp.s
+.PHONY : source/game/localization.cpp.s
+
+source/game/menu.o: source/game/menu.cpp.o
+
+.PHONY : source/game/menu.o
+
+# target to build an object file
+source/game/menu.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menu.cpp.o
+.PHONY : source/game/menu.cpp.o
+
+source/game/menu.i: source/game/menu.cpp.i
+
+.PHONY : source/game/menu.i
+
+# target to preprocess a source file
+source/game/menu.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menu.cpp.i
+.PHONY : source/game/menu.cpp.i
+
+source/game/menu.s: source/game/menu.cpp.s
+
+.PHONY : source/game/menu.s
+
+# target to generate assembly for a file
+source/game/menu.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menu.cpp.s
+.PHONY : source/game/menu.cpp.s
+
+source/game/menuPanel.o: source/game/menuPanel.cpp.o
+
+.PHONY : source/game/menuPanel.o
+
+# target to build an object file
+source/game/menuPanel.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menuPanel.cpp.o
+.PHONY : source/game/menuPanel.cpp.o
+
+source/game/menuPanel.i: source/game/menuPanel.cpp.i
+
+.PHONY : source/game/menuPanel.i
+
+# target to preprocess a source file
+source/game/menuPanel.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menuPanel.cpp.i
+.PHONY : source/game/menuPanel.cpp.i
+
+source/game/menuPanel.s: source/game/menuPanel.cpp.s
+
+.PHONY : source/game/menuPanel.s
+
+# target to generate assembly for a file
+source/game/menuPanel.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/menuPanel.cpp.s
+.PHONY : source/game/menuPanel.cpp.s
+
+source/game/mover.o: source/game/mover.cpp.o
+
+.PHONY : source/game/mover.o
+
+# target to build an object file
+source/game/mover.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/mover.cpp.o
+.PHONY : source/game/mover.cpp.o
+
+source/game/mover.i: source/game/mover.cpp.i
+
+.PHONY : source/game/mover.i
+
+# target to preprocess a source file
+source/game/mover.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/mover.cpp.i
+.PHONY : source/game/mover.cpp.i
+
+source/game/mover.s: source/game/mover.cpp.s
+
+.PHONY : source/game/mover.s
+
+# target to generate assembly for a file
+source/game/mover.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/mover.cpp.s
+.PHONY : source/game/mover.cpp.s
+
+source/game/overWorld.o: source/game/overWorld.cpp.o
+
+.PHONY : source/game/overWorld.o
+
+# target to build an object file
+source/game/overWorld.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/overWorld.cpp.o
+.PHONY : source/game/overWorld.cpp.o
+
+source/game/overWorld.i: source/game/overWorld.cpp.i
+
+.PHONY : source/game/overWorld.i
+
+# target to preprocess a source file
+source/game/overWorld.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/overWorld.cpp.i
+.PHONY : source/game/overWorld.cpp.i
+
+source/game/overWorld.s: source/game/overWorld.cpp.s
+
+.PHONY : source/game/overWorld.s
+
+# target to generate assembly for a file
+source/game/overWorld.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/overWorld.cpp.s
+.PHONY : source/game/overWorld.cpp.s
+
+source/game/pWeapon.o: source/game/pWeapon.cpp.o
+
+.PHONY : source/game/pWeapon.o
+
+# target to build an object file
+source/game/pWeapon.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pWeapon.cpp.o
+.PHONY : source/game/pWeapon.cpp.o
+
+source/game/pWeapon.i: source/game/pWeapon.cpp.i
+
+.PHONY : source/game/pWeapon.i
+
+# target to preprocess a source file
+source/game/pWeapon.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pWeapon.cpp.i
+.PHONY : source/game/pWeapon.cpp.i
+
+source/game/pWeapon.s: source/game/pWeapon.cpp.s
+
+.PHONY : source/game/pWeapon.s
+
+# target to generate assembly for a file
+source/game/pWeapon.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pWeapon.cpp.s
+.PHONY : source/game/pWeapon.cpp.s
+
+source/game/pickup.o: source/game/pickup.cpp.o
+
+.PHONY : source/game/pickup.o
+
+# target to build an object file
+source/game/pickup.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pickup.cpp.o
+.PHONY : source/game/pickup.cpp.o
+
+source/game/pickup.i: source/game/pickup.cpp.i
+
+.PHONY : source/game/pickup.i
+
+# target to preprocess a source file
+source/game/pickup.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pickup.cpp.i
+.PHONY : source/game/pickup.cpp.i
+
+source/game/pickup.s: source/game/pickup.cpp.s
+
+.PHONY : source/game/pickup.s
+
+# target to generate assembly for a file
+source/game/pickup.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/pickup.cpp.s
+.PHONY : source/game/pickup.cpp.s
+
+source/game/playLoop.o: source/game/playLoop.cpp.o
+
+.PHONY : source/game/playLoop.o
+
+# target to build an object file
+source/game/playLoop.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playLoop.cpp.o
+.PHONY : source/game/playLoop.cpp.o
+
+source/game/playLoop.i: source/game/playLoop.cpp.i
+
+.PHONY : source/game/playLoop.i
+
+# target to preprocess a source file
+source/game/playLoop.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playLoop.cpp.i
+.PHONY : source/game/playLoop.cpp.i
+
+source/game/playLoop.s: source/game/playLoop.cpp.s
+
+.PHONY : source/game/playLoop.s
+
+# target to generate assembly for a file
+source/game/playLoop.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playLoop.cpp.s
+.PHONY : source/game/playLoop.cpp.s
+
+source/game/player.o: source/game/player.cpp.o
+
+.PHONY : source/game/player.o
+
+# target to build an object file
+source/game/player.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/player.cpp.o
+.PHONY : source/game/player.cpp.o
+
+source/game/player.i: source/game/player.cpp.i
+
+.PHONY : source/game/player.i
+
+# target to preprocess a source file
+source/game/player.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/player.cpp.i
+.PHONY : source/game/player.cpp.i
+
+source/game/player.s: source/game/player.cpp.s
+
+.PHONY : source/game/player.s
+
+# target to generate assembly for a file
+source/game/player.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/player.cpp.s
+.PHONY : source/game/player.cpp.s
+
+source/game/playerCmd.o: source/game/playerCmd.cpp.o
+
+.PHONY : source/game/playerCmd.o
+
+# target to build an object file
+source/game/playerCmd.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playerCmd.cpp.o
+.PHONY : source/game/playerCmd.cpp.o
+
+source/game/playerCmd.i: source/game/playerCmd.cpp.i
+
+.PHONY : source/game/playerCmd.i
+
+# target to preprocess a source file
+source/game/playerCmd.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playerCmd.cpp.i
+.PHONY : source/game/playerCmd.cpp.i
+
+source/game/playerCmd.s: source/game/playerCmd.cpp.s
+
+.PHONY : source/game/playerCmd.s
+
+# target to generate assembly for a file
+source/game/playerCmd.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/playerCmd.cpp.s
+.PHONY : source/game/playerCmd.cpp.s
+
+source/game/projectile.o: source/game/projectile.cpp.o
+
+.PHONY : source/game/projectile.o
+
+# target to build an object file
+source/game/projectile.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/projectile.cpp.o
+.PHONY : source/game/projectile.cpp.o
+
+source/game/projectile.i: source/game/projectile.cpp.i
+
+.PHONY : source/game/projectile.i
+
+# target to preprocess a source file
+source/game/projectile.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/projectile.cpp.i
+.PHONY : source/game/projectile.cpp.i
+
+source/game/projectile.s: source/game/projectile.cpp.s
+
+.PHONY : source/game/projectile.s
+
+# target to generate assembly for a file
+source/game/projectile.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/projectile.cpp.s
+.PHONY : source/game/projectile.cpp.s
+
+source/game/spring.o: source/game/spring.cpp.o
+
+.PHONY : source/game/spring.o
+
+# target to build an object file
+source/game/spring.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spring.cpp.o
+.PHONY : source/game/spring.cpp.o
+
+source/game/spring.i: source/game/spring.cpp.i
+
+.PHONY : source/game/spring.i
+
+# target to preprocess a source file
+source/game/spring.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spring.cpp.i
+.PHONY : source/game/spring.cpp.i
+
+source/game/spring.s: source/game/spring.cpp.s
+
+.PHONY : source/game/spring.s
+
+# target to generate assembly for a file
+source/game/spring.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spring.cpp.s
+.PHONY : source/game/spring.cpp.s
+
+source/game/sprite.o: source/game/sprite.cpp.o
+
+.PHONY : source/game/sprite.o
+
+# target to build an object file
+source/game/sprite.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/sprite.cpp.o
+.PHONY : source/game/sprite.cpp.o
+
+source/game/sprite.i: source/game/sprite.cpp.i
+
+.PHONY : source/game/sprite.i
+
+# target to preprocess a source file
+source/game/sprite.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/sprite.cpp.i
+.PHONY : source/game/sprite.cpp.i
+
+source/game/sprite.s: source/game/sprite.cpp.s
+
+.PHONY : source/game/sprite.s
+
+# target to generate assembly for a file
+source/game/sprite.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/sprite.cpp.s
+.PHONY : source/game/sprite.cpp.s
+
+source/game/spriteAnim.o: source/game/spriteAnim.cpp.o
+
+.PHONY : source/game/spriteAnim.o
+
+# target to build an object file
+source/game/spriteAnim.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spriteAnim.cpp.o
+.PHONY : source/game/spriteAnim.cpp.o
+
+source/game/spriteAnim.i: source/game/spriteAnim.cpp.i
+
+.PHONY : source/game/spriteAnim.i
+
+# target to preprocess a source file
+source/game/spriteAnim.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spriteAnim.cpp.i
+.PHONY : source/game/spriteAnim.cpp.i
+
+source/game/spriteAnim.s: source/game/spriteAnim.cpp.s
+
+.PHONY : source/game/spriteAnim.s
+
+# target to generate assembly for a file
+source/game/spriteAnim.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/spriteAnim.cpp.s
+.PHONY : source/game/spriteAnim.cpp.s
+
+source/game/titlescreen.o: source/game/titlescreen.cpp.o
+
+.PHONY : source/game/titlescreen.o
+
+# target to build an object file
+source/game/titlescreen.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/titlescreen.cpp.o
+.PHONY : source/game/titlescreen.cpp.o
+
+source/game/titlescreen.i: source/game/titlescreen.cpp.i
+
+.PHONY : source/game/titlescreen.i
+
+# target to preprocess a source file
+source/game/titlescreen.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/titlescreen.cpp.i
+.PHONY : source/game/titlescreen.cpp.i
+
+source/game/titlescreen.s: source/game/titlescreen.cpp.s
+
+.PHONY : source/game/titlescreen.s
+
+# target to generate assembly for a file
+source/game/titlescreen.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/titlescreen.cpp.s
+.PHONY : source/game/titlescreen.cpp.s
+
+source/game/travelObject.o: source/game/travelObject.cpp.o
+
+.PHONY : source/game/travelObject.o
+
+# target to build an object file
+source/game/travelObject.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/travelObject.cpp.o
+.PHONY : source/game/travelObject.cpp.o
+
+source/game/travelObject.i: source/game/travelObject.cpp.i
+
+.PHONY : source/game/travelObject.i
+
+# target to preprocess a source file
+source/game/travelObject.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/travelObject.cpp.i
+.PHONY : source/game/travelObject.cpp.i
+
+source/game/travelObject.s: source/game/travelObject.cpp.s
+
+.PHONY : source/game/travelObject.s
+
+# target to generate assembly for a file
+source/game/travelObject.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/travelObject.cpp.s
+.PHONY : source/game/travelObject.cpp.s
+
+source/game/world.o: source/game/world.cpp.o
+
+.PHONY : source/game/world.o
+
+# target to build an object file
+source/game/world.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/world.cpp.o
+.PHONY : source/game/world.cpp.o
+
+source/game/world.i: source/game/world.cpp.i
+
+.PHONY : source/game/world.i
+
+# target to preprocess a source file
+source/game/world.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/world.cpp.i
+.PHONY : source/game/world.cpp.i
+
+source/game/world.s: source/game/world.cpp.s
+
+.PHONY : source/game/world.s
+
+# target to generate assembly for a file
+source/game/world.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/game/world.cpp.s
+.PHONY : source/game/world.cpp.s
+
+source/main.o: source/main.cpp.o
+
+.PHONY : source/main.o
+
+# target to build an object file
+source/main.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/main.cpp.o
+.PHONY : source/main.cpp.o
+
+source/main.i: source/main.cpp.i
+
+.PHONY : source/main.i
+
+# target to preprocess a source file
+source/main.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/main.cpp.i
+.PHONY : source/main.cpp.i
+
+source/main.s: source/main.cpp.s
+
+.PHONY : source/main.s
+
+# target to generate assembly for a file
+source/main.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/main.cpp.s
+.PHONY : source/main.cpp.s
+
+source/math/angle.o: source/math/angle.cpp.o
+
+.PHONY : source/math/angle.o
+
+# target to build an object file
+source/math/angle.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/angle.cpp.o
+.PHONY : source/math/angle.cpp.o
+
+source/math/angle.i: source/math/angle.cpp.i
+
+.PHONY : source/math/angle.i
+
+# target to preprocess a source file
+source/math/angle.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/angle.cpp.i
+.PHONY : source/math/angle.cpp.i
+
+source/math/angle.s: source/math/angle.cpp.s
+
+.PHONY : source/math/angle.s
+
+# target to generate assembly for a file
+source/math/angle.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/angle.cpp.s
+.PHONY : source/math/angle.cpp.s
+
+source/math/bounds.o: source/math/bounds.cpp.o
+
+.PHONY : source/math/bounds.o
+
+# target to build an object file
+source/math/bounds.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/bounds.cpp.o
+.PHONY : source/math/bounds.cpp.o
+
+source/math/bounds.i: source/math/bounds.cpp.i
+
+.PHONY : source/math/bounds.i
+
+# target to preprocess a source file
+source/math/bounds.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/bounds.cpp.i
+.PHONY : source/math/bounds.cpp.i
+
+source/math/bounds.s: source/math/bounds.cpp.s
+
+.PHONY : source/math/bounds.s
+
+# target to generate assembly for a file
+source/math/bounds.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/bounds.cpp.s
+.PHONY : source/math/bounds.cpp.s
+
+source/math/mathlib.o: source/math/mathlib.cpp.o
+
+.PHONY : source/math/mathlib.o
+
+# target to build an object file
+source/math/mathlib.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/mathlib.cpp.o
+.PHONY : source/math/mathlib.cpp.o
+
+source/math/mathlib.i: source/math/mathlib.cpp.i
+
+.PHONY : source/math/mathlib.i
+
+# target to preprocess a source file
+source/math/mathlib.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/mathlib.cpp.i
+.PHONY : source/math/mathlib.cpp.i
+
+source/math/mathlib.s: source/math/mathlib.cpp.s
+
+.PHONY : source/math/mathlib.s
+
+# target to generate assembly for a file
+source/math/mathlib.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/mathlib.cpp.s
+.PHONY : source/math/mathlib.cpp.s
+
+source/math/matrix.o: source/math/matrix.cpp.o
+
+.PHONY : source/math/matrix.o
+
+# target to build an object file
+source/math/matrix.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/matrix.cpp.o
+.PHONY : source/math/matrix.cpp.o
+
+source/math/matrix.i: source/math/matrix.cpp.i
+
+.PHONY : source/math/matrix.i
+
+# target to preprocess a source file
+source/math/matrix.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/matrix.cpp.i
+.PHONY : source/math/matrix.cpp.i
+
+source/math/matrix.s: source/math/matrix.cpp.s
+
+.PHONY : source/math/matrix.s
+
+# target to generate assembly for a file
+source/math/matrix.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/matrix.cpp.s
+.PHONY : source/math/matrix.cpp.s
+
+source/math/plane.o: source/math/plane.cpp.o
+
+.PHONY : source/math/plane.o
+
+# target to build an object file
+source/math/plane.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/plane.cpp.o
+.PHONY : source/math/plane.cpp.o
+
+source/math/plane.i: source/math/plane.cpp.i
+
+.PHONY : source/math/plane.i
+
+# target to preprocess a source file
+source/math/plane.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/plane.cpp.i
+.PHONY : source/math/plane.cpp.i
+
+source/math/plane.s: source/math/plane.cpp.s
+
+.PHONY : source/math/plane.s
+
+# target to generate assembly for a file
+source/math/plane.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/plane.cpp.s
+.PHONY : source/math/plane.cpp.s
+
+source/math/pluecker.o: source/math/pluecker.cpp.o
+
+.PHONY : source/math/pluecker.o
+
+# target to build an object file
+source/math/pluecker.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/pluecker.cpp.o
+.PHONY : source/math/pluecker.cpp.o
+
+source/math/pluecker.i: source/math/pluecker.cpp.i
+
+.PHONY : source/math/pluecker.i
+
+# target to preprocess a source file
+source/math/pluecker.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/pluecker.cpp.i
+.PHONY : source/math/pluecker.cpp.i
+
+source/math/pluecker.s: source/math/pluecker.cpp.s
+
+.PHONY : source/math/pluecker.s
+
+# target to generate assembly for a file
+source/math/pluecker.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/pluecker.cpp.s
+.PHONY : source/math/pluecker.cpp.s
+
+source/math/quaternion.o: source/math/quaternion.cpp.o
+
+.PHONY : source/math/quaternion.o
+
+# target to build an object file
+source/math/quaternion.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/quaternion.cpp.o
+.PHONY : source/math/quaternion.cpp.o
+
+source/math/quaternion.i: source/math/quaternion.cpp.i
+
+.PHONY : source/math/quaternion.i
+
+# target to preprocess a source file
+source/math/quaternion.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/quaternion.cpp.i
+.PHONY : source/math/quaternion.cpp.i
+
+source/math/quaternion.s: source/math/quaternion.cpp.s
+
+.PHONY : source/math/quaternion.s
+
+# target to generate assembly for a file
+source/math/quaternion.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/quaternion.cpp.s
+.PHONY : source/math/quaternion.cpp.s
+
+source/math/random.o: source/math/random.cpp.o
+
+.PHONY : source/math/random.o
+
+# target to build an object file
+source/math/random.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/random.cpp.o
+.PHONY : source/math/random.cpp.o
+
+source/math/random.i: source/math/random.cpp.i
+
+.PHONY : source/math/random.i
+
+# target to preprocess a source file
+source/math/random.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/random.cpp.i
+.PHONY : source/math/random.cpp.i
+
+source/math/random.s: source/math/random.cpp.s
+
+.PHONY : source/math/random.s
+
+# target to generate assembly for a file
+source/math/random.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/random.cpp.s
+.PHONY : source/math/random.cpp.s
+
+source/math/vector.o: source/math/vector.cpp.o
+
+.PHONY : source/math/vector.o
+
+# target to build an object file
+source/math/vector.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/vector.cpp.o
+.PHONY : source/math/vector.cpp.o
+
+source/math/vector.i: source/math/vector.cpp.i
+
+.PHONY : source/math/vector.i
+
+# target to preprocess a source file
+source/math/vector.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/vector.cpp.i
+.PHONY : source/math/vector.cpp.i
+
+source/math/vector.s: source/math/vector.cpp.s
+
+.PHONY : source/math/vector.s
+
+# target to generate assembly for a file
+source/math/vector.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/math/vector.cpp.s
+.PHONY : source/math/vector.cpp.s
+
+source/movie/movie.o: source/movie/movie.cpp.o
+
+.PHONY : source/movie/movie.o
+
+# target to build an object file
+source/movie/movie.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/movie/movie.cpp.o
+.PHONY : source/movie/movie.cpp.o
+
+source/movie/movie.i: source/movie/movie.cpp.i
+
+.PHONY : source/movie/movie.i
+
+# target to preprocess a source file
+source/movie/movie.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/movie/movie.cpp.i
+.PHONY : source/movie/movie.cpp.i
+
+source/movie/movie.s: source/movie/movie.cpp.s
+
+.PHONY : source/movie/movie.s
+
+# target to generate assembly for a file
+source/movie/movie.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/movie/movie.cpp.s
+.PHONY : source/movie/movie.cpp.s
+
+source/opengl/glcontext.o: source/opengl/glcontext.cpp.o
+
+.PHONY : source/opengl/glcontext.o
+
+# target to build an object file
+source/opengl/glcontext.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/opengl/glcontext.cpp.o
+.PHONY : source/opengl/glcontext.cpp.o
+
+source/opengl/glcontext.i: source/opengl/glcontext.cpp.i
+
+.PHONY : source/opengl/glcontext.i
+
+# target to preprocess a source file
+source/opengl/glcontext.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/opengl/glcontext.cpp.i
+.PHONY : source/opengl/glcontext.cpp.i
+
+source/opengl/glcontext.s: source/opengl/glcontext.cpp.s
+
+.PHONY : source/opengl/glcontext.s
+
+# target to generate assembly for a file
+source/opengl/glcontext.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/opengl/glcontext.cpp.s
+.PHONY : source/opengl/glcontext.cpp.s
+
+source/renderer/cpuVertexList.o: source/renderer/cpuVertexList.cpp.o
+
+.PHONY : source/renderer/cpuVertexList.o
+
+# target to build an object file
+source/renderer/cpuVertexList.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/cpuVertexList.cpp.o
+.PHONY : source/renderer/cpuVertexList.cpp.o
+
+source/renderer/cpuVertexList.i: source/renderer/cpuVertexList.cpp.i
+
+.PHONY : source/renderer/cpuVertexList.i
+
+# target to preprocess a source file
+source/renderer/cpuVertexList.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/cpuVertexList.cpp.i
+.PHONY : source/renderer/cpuVertexList.cpp.i
+
+source/renderer/cpuVertexList.s: source/renderer/cpuVertexList.cpp.s
+
+.PHONY : source/renderer/cpuVertexList.s
+
+# target to generate assembly for a file
+source/renderer/cpuVertexList.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/cpuVertexList.cpp.s
+.PHONY : source/renderer/cpuVertexList.cpp.s
+
+source/renderer/fbo.o: source/renderer/fbo.cpp.o
+
+.PHONY : source/renderer/fbo.o
+
+# target to build an object file
+source/renderer/fbo.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/fbo.cpp.o
+.PHONY : source/renderer/fbo.cpp.o
+
+source/renderer/fbo.i: source/renderer/fbo.cpp.i
+
+.PHONY : source/renderer/fbo.i
+
+# target to preprocess a source file
+source/renderer/fbo.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/fbo.cpp.i
+.PHONY : source/renderer/fbo.cpp.i
+
+source/renderer/fbo.s: source/renderer/fbo.cpp.s
+
+.PHONY : source/renderer/fbo.s
+
+# target to generate assembly for a file
+source/renderer/fbo.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/fbo.cpp.s
+.PHONY : source/renderer/fbo.cpp.s
+
+source/renderer/image.o: source/renderer/image.cpp.o
+
+.PHONY : source/renderer/image.o
+
+# target to build an object file
+source/renderer/image.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/image.cpp.o
+.PHONY : source/renderer/image.cpp.o
+
+source/renderer/image.i: source/renderer/image.cpp.i
+
+.PHONY : source/renderer/image.i
+
+# target to preprocess a source file
+source/renderer/image.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/image.cpp.i
+.PHONY : source/renderer/image.cpp.i
+
+source/renderer/image.s: source/renderer/image.cpp.s
+
+.PHONY : source/renderer/image.s
+
+# target to generate assembly for a file
+source/renderer/image.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/image.cpp.s
+.PHONY : source/renderer/image.cpp.s
+
+source/renderer/renderBackend.o: source/renderer/renderBackend.cpp.o
+
+.PHONY : source/renderer/renderBackend.o
+
+# target to build an object file
+source/renderer/renderBackend.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderBackend.cpp.o
+.PHONY : source/renderer/renderBackend.cpp.o
+
+source/renderer/renderBackend.i: source/renderer/renderBackend.cpp.i
+
+.PHONY : source/renderer/renderBackend.i
+
+# target to preprocess a source file
+source/renderer/renderBackend.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderBackend.cpp.i
+.PHONY : source/renderer/renderBackend.cpp.i
+
+source/renderer/renderBackend.s: source/renderer/renderBackend.cpp.s
+
+.PHONY : source/renderer/renderBackend.s
+
+# target to generate assembly for a file
+source/renderer/renderBackend.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderBackend.cpp.s
+.PHONY : source/renderer/renderBackend.cpp.s
+
+source/renderer/renderDynLight.o: source/renderer/renderDynLight.cpp.o
+
+.PHONY : source/renderer/renderDynLight.o
+
+# target to build an object file
+source/renderer/renderDynLight.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderDynLight.cpp.o
+.PHONY : source/renderer/renderDynLight.cpp.o
+
+source/renderer/renderDynLight.i: source/renderer/renderDynLight.cpp.i
+
+.PHONY : source/renderer/renderDynLight.i
+
+# target to preprocess a source file
+source/renderer/renderDynLight.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderDynLight.cpp.i
+.PHONY : source/renderer/renderDynLight.cpp.i
+
+source/renderer/renderDynLight.s: source/renderer/renderDynLight.cpp.s
+
+.PHONY : source/renderer/renderDynLight.s
+
+# target to generate assembly for a file
+source/renderer/renderDynLight.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderDynLight.cpp.s
+.PHONY : source/renderer/renderDynLight.cpp.s
+
+source/renderer/renderFont.o: source/renderer/renderFont.cpp.o
+
+.PHONY : source/renderer/renderFont.o
+
+# target to build an object file
+source/renderer/renderFont.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderFont.cpp.o
+.PHONY : source/renderer/renderFont.cpp.o
+
+source/renderer/renderFont.i: source/renderer/renderFont.cpp.i
+
+.PHONY : source/renderer/renderFont.i
+
+# target to preprocess a source file
+source/renderer/renderFont.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderFont.cpp.i
+.PHONY : source/renderer/renderFont.cpp.i
+
+source/renderer/renderFont.s: source/renderer/renderFont.cpp.s
+
+.PHONY : source/renderer/renderFont.s
+
+# target to generate assembly for a file
+source/renderer/renderFont.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderFont.cpp.s
+.PHONY : source/renderer/renderFont.cpp.s
+
+source/renderer/renderPortal.o: source/renderer/renderPortal.cpp.o
+
+.PHONY : source/renderer/renderPortal.o
+
+# target to build an object file
+source/renderer/renderPortal.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPortal.cpp.o
+.PHONY : source/renderer/renderPortal.cpp.o
+
+source/renderer/renderPortal.i: source/renderer/renderPortal.cpp.i
+
+.PHONY : source/renderer/renderPortal.i
+
+# target to preprocess a source file
+source/renderer/renderPortal.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPortal.cpp.i
+.PHONY : source/renderer/renderPortal.cpp.i
+
+source/renderer/renderPortal.s: source/renderer/renderPortal.cpp.s
+
+.PHONY : source/renderer/renderPortal.s
+
+# target to generate assembly for a file
+source/renderer/renderPortal.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPortal.cpp.s
+.PHONY : source/renderer/renderPortal.cpp.s
+
+source/renderer/renderPostProcess.o: source/renderer/renderPostProcess.cpp.o
+
+.PHONY : source/renderer/renderPostProcess.o
+
+# target to build an object file
+source/renderer/renderPostProcess.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPostProcess.cpp.o
+.PHONY : source/renderer/renderPostProcess.cpp.o
+
+source/renderer/renderPostProcess.i: source/renderer/renderPostProcess.cpp.i
+
+.PHONY : source/renderer/renderPostProcess.i
+
+# target to preprocess a source file
+source/renderer/renderPostProcess.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPostProcess.cpp.i
+.PHONY : source/renderer/renderPostProcess.cpp.i
+
+source/renderer/renderPostProcess.s: source/renderer/renderPostProcess.cpp.s
+
+.PHONY : source/renderer/renderPostProcess.s
+
+# target to generate assembly for a file
+source/renderer/renderPostProcess.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderPostProcess.cpp.s
+.PHONY : source/renderer/renderPostProcess.cpp.s
+
+source/renderer/renderScene.o: source/renderer/renderScene.cpp.o
+
+.PHONY : source/renderer/renderScene.o
+
+# target to build an object file
+source/renderer/renderScene.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScene.cpp.o
+.PHONY : source/renderer/renderScene.cpp.o
+
+source/renderer/renderScene.i: source/renderer/renderScene.cpp.i
+
+.PHONY : source/renderer/renderScene.i
+
+# target to preprocess a source file
+source/renderer/renderScene.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScene.cpp.i
+.PHONY : source/renderer/renderScene.cpp.i
+
+source/renderer/renderScene.s: source/renderer/renderScene.cpp.s
+
+.PHONY : source/renderer/renderScene.s
+
+# target to generate assembly for a file
+source/renderer/renderScene.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScene.cpp.s
+.PHONY : source/renderer/renderScene.cpp.s
+
+source/renderer/renderScreen.o: source/renderer/renderScreen.cpp.o
+
+.PHONY : source/renderer/renderScreen.o
+
+# target to build an object file
+source/renderer/renderScreen.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScreen.cpp.o
+.PHONY : source/renderer/renderScreen.cpp.o
+
+source/renderer/renderScreen.i: source/renderer/renderScreen.cpp.i
+
+.PHONY : source/renderer/renderScreen.i
+
+# target to preprocess a source file
+source/renderer/renderScreen.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScreen.cpp.i
+.PHONY : source/renderer/renderScreen.cpp.i
+
+source/renderer/renderScreen.s: source/renderer/renderScreen.cpp.s
+
+.PHONY : source/renderer/renderScreen.s
+
+# target to generate assembly for a file
+source/renderer/renderScreen.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderScreen.cpp.s
+.PHONY : source/renderer/renderScreen.cpp.s
+
+source/renderer/renderUtils.o: source/renderer/renderUtils.cpp.o
+
+.PHONY : source/renderer/renderUtils.o
+
+# target to build an object file
+source/renderer/renderUtils.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderUtils.cpp.o
+.PHONY : source/renderer/renderUtils.cpp.o
+
+source/renderer/renderUtils.i: source/renderer/renderUtils.cpp.i
+
+.PHONY : source/renderer/renderUtils.i
+
+# target to preprocess a source file
+source/renderer/renderUtils.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderUtils.cpp.i
+.PHONY : source/renderer/renderUtils.cpp.i
+
+source/renderer/renderUtils.s: source/renderer/renderUtils.cpp.s
+
+.PHONY : source/renderer/renderUtils.s
+
+# target to generate assembly for a file
+source/renderer/renderUtils.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderUtils.cpp.s
+.PHONY : source/renderer/renderUtils.cpp.s
+
+source/renderer/renderView.o: source/renderer/renderView.cpp.o
+
+.PHONY : source/renderer/renderView.o
+
+# target to build an object file
+source/renderer/renderView.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderView.cpp.o
+.PHONY : source/renderer/renderView.cpp.o
+
+source/renderer/renderView.i: source/renderer/renderView.cpp.i
+
+.PHONY : source/renderer/renderView.i
+
+# target to preprocess a source file
+source/renderer/renderView.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderView.cpp.i
+.PHONY : source/renderer/renderView.cpp.i
+
+source/renderer/renderView.s: source/renderer/renderView.cpp.s
+
+.PHONY : source/renderer/renderView.s
+
+# target to generate assembly for a file
+source/renderer/renderView.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/renderView.cpp.s
+.PHONY : source/renderer/renderView.cpp.s
+
+source/renderer/shaderProg.o: source/renderer/shaderProg.cpp.o
+
+.PHONY : source/renderer/shaderProg.o
+
+# target to build an object file
+source/renderer/shaderProg.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/shaderProg.cpp.o
+.PHONY : source/renderer/shaderProg.cpp.o
+
+source/renderer/shaderProg.i: source/renderer/shaderProg.cpp.i
+
+.PHONY : source/renderer/shaderProg.i
+
+# target to preprocess a source file
+source/renderer/shaderProg.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/shaderProg.cpp.i
+.PHONY : source/renderer/shaderProg.cpp.i
+
+source/renderer/shaderProg.s: source/renderer/shaderProg.cpp.s
+
+.PHONY : source/renderer/shaderProg.s
+
+# target to generate assembly for a file
+source/renderer/shaderProg.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/shaderProg.cpp.s
+.PHONY : source/renderer/shaderProg.cpp.s
+
+source/renderer/textureManager.o: source/renderer/textureManager.cpp.o
+
+.PHONY : source/renderer/textureManager.o
+
+# target to build an object file
+source/renderer/textureManager.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureManager.cpp.o
+.PHONY : source/renderer/textureManager.cpp.o
+
+source/renderer/textureManager.i: source/renderer/textureManager.cpp.i
+
+.PHONY : source/renderer/textureManager.i
+
+# target to preprocess a source file
+source/renderer/textureManager.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureManager.cpp.i
+.PHONY : source/renderer/textureManager.cpp.i
+
+source/renderer/textureManager.s: source/renderer/textureManager.cpp.s
+
+.PHONY : source/renderer/textureManager.s
+
+# target to generate assembly for a file
+source/renderer/textureManager.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureManager.cpp.s
+.PHONY : source/renderer/textureManager.cpp.s
+
+source/renderer/textureObject.o: source/renderer/textureObject.cpp.o
+
+.PHONY : source/renderer/textureObject.o
+
+# target to build an object file
+source/renderer/textureObject.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureObject.cpp.o
+.PHONY : source/renderer/textureObject.cpp.o
+
+source/renderer/textureObject.i: source/renderer/textureObject.cpp.i
+
+.PHONY : source/renderer/textureObject.i
+
+# target to preprocess a source file
+source/renderer/textureObject.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureObject.cpp.i
+.PHONY : source/renderer/textureObject.cpp.i
+
+source/renderer/textureObject.s: source/renderer/textureObject.cpp.s
+
+.PHONY : source/renderer/textureObject.s
+
+# target to generate assembly for a file
+source/renderer/textureObject.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/textureObject.cpp.s
+.PHONY : source/renderer/textureObject.cpp.s
+
+source/renderer/vertexBuffer.o: source/renderer/vertexBuffer.cpp.o
+
+.PHONY : source/renderer/vertexBuffer.o
+
+# target to build an object file
+source/renderer/vertexBuffer.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/vertexBuffer.cpp.o
+.PHONY : source/renderer/vertexBuffer.cpp.o
+
+source/renderer/vertexBuffer.i: source/renderer/vertexBuffer.cpp.i
+
+.PHONY : source/renderer/vertexBuffer.i
+
+# target to preprocess a source file
+source/renderer/vertexBuffer.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/vertexBuffer.cpp.i
+.PHONY : source/renderer/vertexBuffer.cpp.i
+
+source/renderer/vertexBuffer.s: source/renderer/vertexBuffer.cpp.s
+
+.PHONY : source/renderer/vertexBuffer.s
+
+# target to generate assembly for a file
+source/renderer/vertexBuffer.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/renderer/vertexBuffer.cpp.s
+.PHONY : source/renderer/vertexBuffer.cpp.s
+
+source/script/scriptSystem.o: source/script/scriptSystem.cpp.o
+
+.PHONY : source/script/scriptSystem.o
+
+# target to build an object file
+source/script/scriptSystem.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/script/scriptSystem.cpp.o
+.PHONY : source/script/scriptSystem.cpp.o
+
+source/script/scriptSystem.i: source/script/scriptSystem.cpp.i
+
+.PHONY : source/script/scriptSystem.i
+
+# target to preprocess a source file
+source/script/scriptSystem.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/script/scriptSystem.cpp.i
+.PHONY : source/script/scriptSystem.cpp.i
+
+source/script/scriptSystem.s: source/script/scriptSystem.cpp.s
+
+.PHONY : source/script/scriptSystem.s
+
+# target to generate assembly for a file
+source/script/scriptSystem.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/script/scriptSystem.cpp.s
+.PHONY : source/script/scriptSystem.cpp.s
+
+source/tools/dataConvert.o: source/tools/dataConvert.cpp.o
+
+.PHONY : source/tools/dataConvert.o
+
+# target to build an object file
+source/tools/dataConvert.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/dataConvert.cpp.o
+.PHONY : source/tools/dataConvert.cpp.o
+
+source/tools/dataConvert.i: source/tools/dataConvert.cpp.i
+
+.PHONY : source/tools/dataConvert.i
+
+# target to preprocess a source file
+source/tools/dataConvert.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/dataConvert.cpp.i
+.PHONY : source/tools/dataConvert.cpp.i
+
+source/tools/dataConvert.s: source/tools/dataConvert.cpp.s
+
+.PHONY : source/tools/dataConvert.s
+
+# target to generate assembly for a file
+source/tools/dataConvert.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/dataConvert.cpp.s
+.PHONY : source/tools/dataConvert.cpp.s
+
+source/tools/spriteMake.o: source/tools/spriteMake.cpp.o
+
+.PHONY : source/tools/spriteMake.o
+
+# target to build an object file
+source/tools/spriteMake.cpp.o:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/spriteMake.cpp.o
+.PHONY : source/tools/spriteMake.cpp.o
+
+source/tools/spriteMake.i: source/tools/spriteMake.cpp.i
+
+.PHONY : source/tools/spriteMake.i
+
+# target to preprocess a source file
+source/tools/spriteMake.cpp.i:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/spriteMake.cpp.i
+.PHONY : source/tools/spriteMake.cpp.i
+
+source/tools/spriteMake.s: source/tools/spriteMake.cpp.s
+
+.PHONY : source/tools/spriteMake.s
+
+# target to generate assembly for a file
+source/tools/spriteMake.cpp.s:
+	$(MAKE) -f CMakeFiles/powerslave_ex.dir/build.make CMakeFiles/powerslave_ex.dir/source/tools/spriteMake.cpp.s
+.PHONY : source/tools/spriteMake.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -995,6 +2952,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... powerslave_ex"
 	@echo "... angelscript"
 	@echo "... lib/angelscript/source/as_atomic.o"
 	@echo "... lib/angelscript/source/as_atomic.i"
@@ -1092,6 +3050,222 @@ help:
 	@echo "... lib/angelscript/source/as_variablescope.o"
 	@echo "... lib/angelscript/source/as_variablescope.i"
 	@echo "... lib/angelscript/source/as_variablescope.s"
+	@echo "... source/framework/actions.o"
+	@echo "... source/framework/actions.i"
+	@echo "... source/framework/actions.s"
+	@echo "... source/framework/binFile.o"
+	@echo "... source/framework/binFile.i"
+	@echo "... source/framework/binFile.s"
+	@echo "... source/framework/cmd.o"
+	@echo "... source/framework/cmd.i"
+	@echo "... source/framework/cmd.s"
+	@echo "... source/framework/console.o"
+	@echo "... source/framework/console.i"
+	@echo "... source/framework/console.s"
+	@echo "... source/framework/cvar.o"
+	@echo "... source/framework/cvar.i"
+	@echo "... source/framework/cvar.s"
+	@echo "... source/framework/defs.o"
+	@echo "... source/framework/defs.i"
+	@echo "... source/framework/defs.s"
+	@echo "... source/framework/dict.o"
+	@echo "... source/framework/dict.i"
+	@echo "... source/framework/dict.s"
+	@echo "... source/framework/kpf.o"
+	@echo "... source/framework/kpf.i"
+	@echo "... source/framework/kpf.s"
+	@echo "... source/framework/kstring.o"
+	@echo "... source/framework/kstring.i"
+	@echo "... source/framework/kstring.s"
+	@echo "... source/framework/memHeap.o"
+	@echo "... source/framework/memHeap.i"
+	@echo "... source/framework/memHeap.s"
+	@echo "... source/framework/object.o"
+	@echo "... source/framework/object.i"
+	@echo "... source/framework/object.s"
+	@echo "... source/framework/parser.o"
+	@echo "... source/framework/parser.i"
+	@echo "... source/framework/parser.s"
+	@echo "... source/framework/session.o"
+	@echo "... source/framework/session.i"
+	@echo "... source/framework/session.s"
+	@echo "... source/framework/unzip.o"
+	@echo "... source/framework/unzip.i"
+	@echo "... source/framework/unzip.s"
+	@echo "... source/game/actionDef.o"
+	@echo "... source/game/actionDef.i"
+	@echo "... source/game/actionDef.s"
+	@echo "... source/game/actor.o"
+	@echo "... source/game/actor.i"
+	@echo "... source/game/actor.s"
+	@echo "... source/game/actorFactory.o"
+	@echo "... source/game/actorFactory.i"
+	@echo "... source/game/actorFactory.s"
+	@echo "... source/game/ai.o"
+	@echo "... source/game/ai.i"
+	@echo "... source/game/ai.s"
+	@echo "... source/game/cmodel.o"
+	@echo "... source/game/cmodel.i"
+	@echo "... source/game/cmodel.s"
+	@echo "... source/game/dlightObj.o"
+	@echo "... source/game/dlightObj.i"
+	@echo "... source/game/dlightObj.s"
+	@echo "... source/game/game.o"
+	@echo "... source/game/game.i"
+	@echo "... source/game/game.s"
+	@echo "... source/game/gameObject.o"
+	@echo "... source/game/gameObject.i"
+	@echo "... source/game/gameObject.s"
+	@echo "... source/game/hud.o"
+	@echo "... source/game/hud.i"
+	@echo "... source/game/hud.s"
+	@echo "... source/game/inventoryMenu.o"
+	@echo "... source/game/inventoryMenu.i"
+	@echo "... source/game/inventoryMenu.s"
+	@echo "... source/game/localization.o"
+	@echo "... source/game/localization.i"
+	@echo "... source/game/localization.s"
+	@echo "... source/game/menu.o"
+	@echo "... source/game/menu.i"
+	@echo "... source/game/menu.s"
+	@echo "... source/game/menuPanel.o"
+	@echo "... source/game/menuPanel.i"
+	@echo "... source/game/menuPanel.s"
+	@echo "... source/game/mover.o"
+	@echo "... source/game/mover.i"
+	@echo "... source/game/mover.s"
+	@echo "... source/game/overWorld.o"
+	@echo "... source/game/overWorld.i"
+	@echo "... source/game/overWorld.s"
+	@echo "... source/game/pWeapon.o"
+	@echo "... source/game/pWeapon.i"
+	@echo "... source/game/pWeapon.s"
+	@echo "... source/game/pickup.o"
+	@echo "... source/game/pickup.i"
+	@echo "... source/game/pickup.s"
+	@echo "... source/game/playLoop.o"
+	@echo "... source/game/playLoop.i"
+	@echo "... source/game/playLoop.s"
+	@echo "... source/game/player.o"
+	@echo "... source/game/player.i"
+	@echo "... source/game/player.s"
+	@echo "... source/game/playerCmd.o"
+	@echo "... source/game/playerCmd.i"
+	@echo "... source/game/playerCmd.s"
+	@echo "... source/game/projectile.o"
+	@echo "... source/game/projectile.i"
+	@echo "... source/game/projectile.s"
+	@echo "... source/game/spring.o"
+	@echo "... source/game/spring.i"
+	@echo "... source/game/spring.s"
+	@echo "... source/game/sprite.o"
+	@echo "... source/game/sprite.i"
+	@echo "... source/game/sprite.s"
+	@echo "... source/game/spriteAnim.o"
+	@echo "... source/game/spriteAnim.i"
+	@echo "... source/game/spriteAnim.s"
+	@echo "... source/game/titlescreen.o"
+	@echo "... source/game/titlescreen.i"
+	@echo "... source/game/titlescreen.s"
+	@echo "... source/game/travelObject.o"
+	@echo "... source/game/travelObject.i"
+	@echo "... source/game/travelObject.s"
+	@echo "... source/game/world.o"
+	@echo "... source/game/world.i"
+	@echo "... source/game/world.s"
+	@echo "... source/main.o"
+	@echo "... source/main.i"
+	@echo "... source/main.s"
+	@echo "... source/math/angle.o"
+	@echo "... source/math/angle.i"
+	@echo "... source/math/angle.s"
+	@echo "... source/math/bounds.o"
+	@echo "... source/math/bounds.i"
+	@echo "... source/math/bounds.s"
+	@echo "... source/math/mathlib.o"
+	@echo "... source/math/mathlib.i"
+	@echo "... source/math/mathlib.s"
+	@echo "... source/math/matrix.o"
+	@echo "... source/math/matrix.i"
+	@echo "... source/math/matrix.s"
+	@echo "... source/math/plane.o"
+	@echo "... source/math/plane.i"
+	@echo "... source/math/plane.s"
+	@echo "... source/math/pluecker.o"
+	@echo "... source/math/pluecker.i"
+	@echo "... source/math/pluecker.s"
+	@echo "... source/math/quaternion.o"
+	@echo "... source/math/quaternion.i"
+	@echo "... source/math/quaternion.s"
+	@echo "... source/math/random.o"
+	@echo "... source/math/random.i"
+	@echo "... source/math/random.s"
+	@echo "... source/math/vector.o"
+	@echo "... source/math/vector.i"
+	@echo "... source/math/vector.s"
+	@echo "... source/movie/movie.o"
+	@echo "... source/movie/movie.i"
+	@echo "... source/movie/movie.s"
+	@echo "... source/opengl/glcontext.o"
+	@echo "... source/opengl/glcontext.i"
+	@echo "... source/opengl/glcontext.s"
+	@echo "... source/renderer/cpuVertexList.o"
+	@echo "... source/renderer/cpuVertexList.i"
+	@echo "... source/renderer/cpuVertexList.s"
+	@echo "... source/renderer/fbo.o"
+	@echo "... source/renderer/fbo.i"
+	@echo "... source/renderer/fbo.s"
+	@echo "... source/renderer/image.o"
+	@echo "... source/renderer/image.i"
+	@echo "... source/renderer/image.s"
+	@echo "... source/renderer/renderBackend.o"
+	@echo "... source/renderer/renderBackend.i"
+	@echo "... source/renderer/renderBackend.s"
+	@echo "... source/renderer/renderDynLight.o"
+	@echo "... source/renderer/renderDynLight.i"
+	@echo "... source/renderer/renderDynLight.s"
+	@echo "... source/renderer/renderFont.o"
+	@echo "... source/renderer/renderFont.i"
+	@echo "... source/renderer/renderFont.s"
+	@echo "... source/renderer/renderPortal.o"
+	@echo "... source/renderer/renderPortal.i"
+	@echo "... source/renderer/renderPortal.s"
+	@echo "... source/renderer/renderPostProcess.o"
+	@echo "... source/renderer/renderPostProcess.i"
+	@echo "... source/renderer/renderPostProcess.s"
+	@echo "... source/renderer/renderScene.o"
+	@echo "... source/renderer/renderScene.i"
+	@echo "... source/renderer/renderScene.s"
+	@echo "... source/renderer/renderScreen.o"
+	@echo "... source/renderer/renderScreen.i"
+	@echo "... source/renderer/renderScreen.s"
+	@echo "... source/renderer/renderUtils.o"
+	@echo "... source/renderer/renderUtils.i"
+	@echo "... source/renderer/renderUtils.s"
+	@echo "... source/renderer/renderView.o"
+	@echo "... source/renderer/renderView.i"
+	@echo "... source/renderer/renderView.s"
+	@echo "... source/renderer/shaderProg.o"
+	@echo "... source/renderer/shaderProg.i"
+	@echo "... source/renderer/shaderProg.s"
+	@echo "... source/renderer/textureManager.o"
+	@echo "... source/renderer/textureManager.i"
+	@echo "... source/renderer/textureManager.s"
+	@echo "... source/renderer/textureObject.o"
+	@echo "... source/renderer/textureObject.i"
+	@echo "... source/renderer/textureObject.s"
+	@echo "... source/renderer/vertexBuffer.o"
+	@echo "... source/renderer/vertexBuffer.i"
+	@echo "... source/renderer/vertexBuffer.s"
+	@echo "... source/script/scriptSystem.o"
+	@echo "... source/script/scriptSystem.i"
+	@echo "... source/script/scriptSystem.s"
+	@echo "... source/tools/dataConvert.o"
+	@echo "... source/tools/dataConvert.i"
+	@echo "... source/tools/dataConvert.s"
+	@echo "... source/tools/spriteMake.o"
+	@echo "... source/tools/spriteMake.i"
+	@echo "... source/tools/spriteMake.s"
 .PHONY : help
 
 

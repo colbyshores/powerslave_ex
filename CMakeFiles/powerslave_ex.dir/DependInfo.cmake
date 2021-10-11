@@ -1,0 +1,95 @@
+# The set of languages for which implicit dependencies are needed:
+set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
+  )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/actions.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/actions.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/binFile.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/binFile.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/cmd.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/cmd.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/console.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/console.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/cvar.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/cvar.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/defs.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/defs.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/dict.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/dict.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/kpf.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/kpf.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/kstring.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/kstring.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/memHeap.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/memHeap.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/object.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/object.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/parser.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/parser.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/session.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/session.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/framework/unzip.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/framework/unzip.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/actionDef.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/actionDef.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/actor.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/actor.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/actorFactory.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/actorFactory.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/ai.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/ai.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/cmodel.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/cmodel.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/dlightObj.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/dlightObj.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/game.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/game.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/gameObject.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/gameObject.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/hud.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/hud.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/inventoryMenu.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/inventoryMenu.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/localization.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/localization.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/menu.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/menu.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/menuPanel.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/menuPanel.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/mover.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/mover.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/overWorld.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/overWorld.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/pWeapon.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/pWeapon.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/pickup.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/pickup.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/playLoop.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/playLoop.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/player.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/player.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/playerCmd.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/playerCmd.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/projectile.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/projectile.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/spring.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/spring.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/sprite.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/sprite.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/spriteAnim.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/spriteAnim.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/titlescreen.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/titlescreen.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/travelObject.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/travelObject.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/game/world.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/game/world.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/main.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/main.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/angle.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/angle.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/bounds.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/bounds.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/mathlib.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/mathlib.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/matrix.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/matrix.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/plane.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/plane.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/pluecker.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/pluecker.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/quaternion.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/quaternion.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/random.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/random.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/math/vector.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/math/vector.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/movie/movie.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/movie/movie.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/opengl/glcontext.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/opengl/glcontext.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/cpuVertexList.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/cpuVertexList.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/fbo.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/fbo.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/image.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/image.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderBackend.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderBackend.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderDynLight.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderDynLight.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderFont.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderFont.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderPortal.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderPortal.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderPostProcess.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderPostProcess.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderScene.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderScene.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderScreen.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderScreen.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderUtils.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderUtils.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/renderView.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/renderView.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/shaderProg.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/shaderProg.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/textureManager.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/textureManager.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/textureObject.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/textureObject.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/renderer/vertexBuffer.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/renderer/vertexBuffer.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/script/scriptSystem.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/script/scriptSystem.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/tools/dataConvert.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/tools/dataConvert.cpp.o"
+  "/home/cole/Documents/GitHub/powerslave_ex/source/tools/spriteMake.cpp" "/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir/source/tools/spriteMake.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
+
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "ANGELSCRIPT_DIR"
+  "lib/angelscript/sdk/angelscript/include"
+  "FFMPEG_DIR"
+  "lib/ffmpeg/FFmpeg-n2.7.2"
+  )
+
+# Targets to which this target links.
+set(CMAKE_TARGET_LINKED_INFO_FILES
+  )
+
+# Fortran module output directory.
+set(CMAKE_Fortran_TARGET_MODULE_DIR "")
