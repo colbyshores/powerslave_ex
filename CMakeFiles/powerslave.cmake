@@ -226,13 +226,7 @@ find_library(SWRESAMPLE_LIB
              )
 
 
-
- 
-     message(STATUS "debug- ${POWERSLAVE_HEADERS}")
-
-
 add_executable(powerslave_ex ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
-
 
 target_link_libraries(powerslave_ex ${ANGELSCRIPT_LIB})
 target_link_libraries(powerslave_ex ${AVUTIL_LIB})
