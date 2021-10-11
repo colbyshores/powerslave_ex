@@ -36,8 +36,7 @@ else()
 	SET(CMAKE_CXX_COMPILER "/usr/local/vitasdk/bin/arm-vita-eabi-g++")
 	add_compile_options( 
 		-mtune=cortex-a9 
-		#-Wl,-q 
-		-Wl,--export-dynamic
+		-Wl,-q 
 		-O2 
 		-ftree-vectorize 
 		-fomit-frame-pointer 
