@@ -93,104 +93,104 @@ set(POWERSLAVE_SOURCE
 
 set(POWERSLAVE_HEADERS
 	#source/framework
-	${PROJECT_SOURCE_DIR}/source/framework/actions.h
-	${PROJECT_SOURCE_DIR}/source/framework/array.h
-	${PROJECT_SOURCE_DIR}/source/framework/binFile.h
-	${PROJECT_SOURCE_DIR}/source/framework/cmd.h
-	${PROJECT_SOURCE_DIR}/source/framework/console.h
-	${PROJECT_SOURCE_DIR}/source/framework/cvar.h
-	${PROJECT_SOURCE_DIR}/source/framework/defs.h
-	${PROJECT_SOURCE_DIR}/source/framework/dict.h
-	${PROJECT_SOURCE_DIR}/source/framework/hashlist.h
-	${PROJECT_SOURCE_DIR}/source/framework/kpf.h
-	${PROJECT_SOURCE_DIR}/source/framework/kstring.h
-	${PROJECT_SOURCE_DIR}/source/framework/linkedlist.h
-	${PROJECT_SOURCE_DIR}/source/framework/memHeap.h
-	${PROJECT_SOURCE_DIR}/source/framework/msort.h
-	${PROJECT_SOURCE_DIR}/source/framework/object.h
-	${PROJECT_SOURCE_DIR}/source/framework/parser.h
-	${PROJECT_SOURCE_DIR}/source/framework/queue.h
-	${PROJECT_SOURCE_DIR}/source/framework/sdNodes.h
-	${PROJECT_SOURCE_DIR}/source/framework/session.h
-	${PROJECT_SOURCE_DIR}/source/framework/stack.h
-	${PROJECT_SOURCE_DIR}/source/framework/unzip.h
+	${PROJECT_SOURCE_DIR}/source/framework/actions.h 
+	${PROJECT_SOURCE_DIR}/source/framework/array.h 
+	${PROJECT_SOURCE_DIR}/source/framework/binFile.h 
+	${PROJECT_SOURCE_DIR}/source/framework/cmd.h 
+	${PROJECT_SOURCE_DIR}/source/framework/console.h 
+	${PROJECT_SOURCE_DIR}/source/framework/cvar.h 
+	${PROJECT_SOURCE_DIR}/source/framework/defs.h 
+	${PROJECT_SOURCE_DIR}/source/framework/dict.h 
+	${PROJECT_SOURCE_DIR}/source/framework/hashlist.h 
+	${PROJECT_SOURCE_DIR}/source/framework/kpf.h 
+	${PROJECT_SOURCE_DIR}/source/framework/kstring.h 
+	${PROJECT_SOURCE_DIR}/source/framework/linkedlist.h 
+	${PROJECT_SOURCE_DIR}/source/framework/memHeap.h 
+	${PROJECT_SOURCE_DIR}/source/framework/msort.h 
+	${PROJECT_SOURCE_DIR}/source/framework/object.h 
+	${PROJECT_SOURCE_DIR}/source/framework/parser.h 
+	${PROJECT_SOURCE_DIR}/source/framework/queue.h 
+	${PROJECT_SOURCE_DIR}/source/framework/sdNodes.h 
+	${PROJECT_SOURCE_DIR}/source/framework/session.h 
+	${PROJECT_SOURCE_DIR}/source/framework/stack.h 
+	${PROJECT_SOURCE_DIR}/source/framework/unzip.h 
 
 	#source/game
-	${PROJECT_SOURCE_DIR}/source/game/actionDef.h
-	${PROJECT_SOURCE_DIR}/source/game/actorFactory.h
-	${PROJECT_SOURCE_DIR}/source/game/actor.h
-	${PROJECT_SOURCE_DIR}/source/game/ai.h
-	${PROJECT_SOURCE_DIR}/source/game/cmodel.h
-	${PROJECT_SOURCE_DIR}/source/game/dlightObj.h
-	${PROJECT_SOURCE_DIR}/source/game/game.h
-	${PROJECT_SOURCE_DIR}/source/game/gameObject.h
-	${PROJECT_SOURCE_DIR}/source/game/hud.h
-	${PROJECT_SOURCE_DIR}/source/game/inventoryMenu.h
-	${PROJECT_SOURCE_DIR}/source/game/localization.h
-	${PROJECT_SOURCE_DIR}/source/game/menu.h
-	${PROJECT_SOURCE_DIR}/source/game/menuPanel.h
-	${PROJECT_SOURCE_DIR}/source/game/mover.h
-	${PROJECT_SOURCE_DIR}/source/game/overWorld.h
-	${PROJECT_SOURCE_DIR}/source/game/pickup.h
-	${PROJECT_SOURCE_DIR}/source/game/playerCmd.h
-	${PROJECT_SOURCE_DIR}/source/game/player.h
-	${PROJECT_SOURCE_DIR}/source/game/playLoop.h
-	${PROJECT_SOURCE_DIR}/source/game/projectile.h
-	${PROJECT_SOURCE_DIR}/source/game/pWeapon.h
-	${PROJECT_SOURCE_DIR}/source/game/spring.h
-	${PROJECT_SOURCE_DIR}/source/game/spriteAnim.h
-	${PROJECT_SOURCE_DIR}/source/game/sprite.h
-	${PROJECT_SOURCE_DIR}/source/game/titlescreen.h
-	${PROJECT_SOURCE_DIR}/source/game/travelObject.h
-	${PROJECT_SOURCE_DIR}/source/game/world.h
+	${PROJECT_SOURCE_DIR}/source/game/actionDef.h 
+	${PROJECT_SOURCE_DIR}/source/game/actorFactory.h 
+	${PROJECT_SOURCE_DIR}/source/game/actor.h 
+	${PROJECT_SOURCE_DIR}/source/game/ai.h 
+	${PROJECT_SOURCE_DIR}/source/game/cmodel.h 
+	${PROJECT_SOURCE_DIR}/source/game/dlightObj.h 
+	${PROJECT_SOURCE_DIR}/source/game/game.h 
+	${PROJECT_SOURCE_DIR}/source/game/gameObject.h 
+	${PROJECT_SOURCE_DIR}/source/game/hud.h 
+	${PROJECT_SOURCE_DIR}/source/game/inventoryMenu.h 
+	${PROJECT_SOURCE_DIR}/source/game/localization.h 
+	${PROJECT_SOURCE_DIR}/source/game/menu.h 
+	${PROJECT_SOURCE_DIR}/source/game/menuPanel.h 
+	${PROJECT_SOURCE_DIR}/source/game/mover.h 
+	${PROJECT_SOURCE_DIR}/source/game/overWorld.h 
+	${PROJECT_SOURCE_DIR}/source/game/pickup.h 
+	${PROJECT_SOURCE_DIR}/source/game/playerCmd.h 
+	${PROJECT_SOURCE_DIR}/source/game/player.h 
+	${PROJECT_SOURCE_DIR}/source/game/playLoop.h 
+	${PROJECT_SOURCE_DIR}/source/game/projectile.h 
+	${PROJECT_SOURCE_DIR}/source/game/pWeapon.h 
+	${PROJECT_SOURCE_DIR}/source/game/spring.h 
+	${PROJECT_SOURCE_DIR}/source/game/spriteAnim.h 
+	${PROJECT_SOURCE_DIR}/source/game/sprite.h 
+	${PROJECT_SOURCE_DIR}/source/game/titlescreen.h 
+	${PROJECT_SOURCE_DIR}/source/game/travelObject.h 
+	${PROJECT_SOURCE_DIR}/source/game/world.h 
 
 	#source/
-	${PROJECT_SOURCE_DIR}/source/filter.h
-	${PROJECT_SOURCE_DIR}/source/kexlib.h
+	${PROJECT_SOURCE_DIR}/source/filter.h 
+	${PROJECT_SOURCE_DIR}/source/kexlib.h 
 
 	#source/math
-	${PROJECT_SOURCE_DIR}/source/math/mathlib.h
+	${PROJECT_SOURCE_DIR}/source/math/mathlib.h 
 
 	#source/movie
-	${PROJECT_SOURCE_DIR}/source/movie/movie.h
+	${PROJECT_SOURCE_DIR}/source/movie/movie.h 
 
 	#source/opengl
-	${PROJECT_SOURCE_DIR}/source/opengl/dgl.h
-	${PROJECT_SOURCE_DIR}/source/opengl/glcontext.h
+	${PROJECT_SOURCE_DIR}/source/opengl/dgl.h 
+	${PROJECT_SOURCE_DIR}/source/opengl/glcontext.h 
 
 	#source/renderer
-	${PROJECT_SOURCE_DIR}/source/renderer/cpuVertexList.h
-	${PROJECT_SOURCE_DIR}/source/renderer/fbo.h
-	${PROJECT_SOURCE_DIR}/source/renderer/image.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderBackend.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderFont.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderMain.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderPostProcess.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderScene.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderScreen.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderUtils.h
-	${PROJECT_SOURCE_DIR}/source/renderer/renderView.h
-	${PROJECT_SOURCE_DIR}/source/renderer/shaderProg.h
-	${PROJECT_SOURCE_DIR}/source/renderer/textureManager.h
-	${PROJECT_SOURCE_DIR}/source/renderer/textureObject.h
-	${PROJECT_SOURCE_DIR}/source/renderer/vertexBuffer.h
+	${PROJECT_SOURCE_DIR}/source/renderer/cpuVertexList.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/fbo.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/image.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderBackend.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderFont.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderMain.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderPostProcess.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderScene.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderScreen.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderUtils.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/renderView.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/shaderProg.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/textureManager.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/textureObject.h 
+	${PROJECT_SOURCE_DIR}/source/renderer/vertexBuffer.h 
 
 	#source/script
-	${PROJECT_SOURCE_DIR}/source/script/scriptSystem.h
+	${PROJECT_SOURCE_DIR}/source/script/scriptSystem.h 
 
 	#source/system
-	${PROJECT_SOURCE_DIR}/source/system/endian.h
-	${PROJECT_SOURCE_DIR}/source/system/input.h
-	${PROJECT_SOURCE_DIR}/source/system/joystick.h
-	${PROJECT_SOURCE_DIR}/source/system/keyboard.h
-	${PROJECT_SOURCE_DIR}/source/system/mouse.h
-	${PROJECT_SOURCE_DIR}/source/system/sound.h
-	${PROJECT_SOURCE_DIR}/source/system/system.h
-	${PROJECT_SOURCE_DIR}/source/system/thread.h
-	${PROJECT_SOURCE_DIR}/source/system/timer.h
+	${PROJECT_SOURCE_DIR}/source/system/endian.h 
+	${PROJECT_SOURCE_DIR}/source/system/input.h 
+	${PROJECT_SOURCE_DIR}/source/system/joystick.h 
+	${PROJECT_SOURCE_DIR}/source/system/keyboard.h 
+	${PROJECT_SOURCE_DIR}/source/system/mouse.h 
+	${PROJECT_SOURCE_DIR}/source/system/sound.h 
+	${PROJECT_SOURCE_DIR}/source/system/system.h 
+	${PROJECT_SOURCE_DIR}/source/system/thread.h 
+	${PROJECT_SOURCE_DIR}/source/system/timer.h 
 
 	#source/tools
-	${PROJECT_SOURCE_DIR}/source/tools/spriteMake.h
+	${PROJECT_SOURCE_DIR}/source/tools/spriteMake.h 
 )
 
 
@@ -201,9 +201,6 @@ find_library(ANGELSCRIPT_LIB
 	     NAMES libangelscript.a
 	     HINTS ${PROJECT_SOURCE_DIR}/lib/angelscript/lib/
 	     )
-
-
-
 find_library(AVUTIL_LIB
              NAMES libavutil.a
              HINTS  ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil/
@@ -231,16 +228,36 @@ find_library(SWRESAMPLE_LIB
 
 
  
- message(STATUS "debug- ${ANGELSCRIPT_LIB}")
+     message(STATUS "debug- ${POWERSLAVE_HEADERS}")
 
 
 add_executable(powerslave_ex ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
 
 
 target_link_libraries(powerslave_ex ${ANGELSCRIPT_LIB})
-
 target_link_libraries(powerslave_ex ${AVUTIL_LIB})
 target_link_libraries(powerslave_ex ${AVCODEC_LIB})
 target_link_libraries(powerslave_ex ${AVFORMAT_LIB})
 target_link_libraries(powerslave_ex ${SWSCALE_LIB})
 target_link_libraries(powerslave_ex ${SWRESAMPLE_LIB})
+
+
+include_directories(
+	${PROJECT_SOURCE_DIR}/source
+	${PROJECT_SOURCE_DIR}/source/framework
+	${PROJECT_SOURCE_DIR}/source/game
+	${PROJECT_SOURCE_DIR}/source/math
+	${PROJECT_SOURCE_DIR}/source/movie
+	${PROJECT_SOURCE_DIR}/source/opengl
+	${PROJECT_SOURCE_DIR}/source/renderer
+	${PROJECT_SOURCE_DIR}/source/script
+	${PROJECT_SOURCE_DIR}/source/script/objects
+	${PROJECT_SOURCE_DIR}/source/script/al
+	${PROJECT_SOURCE_DIR}/source/system
+	${PROJECT_SOURCE_DIR}/source/system/sdl
+	${PROJECT_SOURCE_DIR}/source/tools
+	${PROJECT_SOURCE_DIR}/source/tools/mapEditor
+	${PROJECT_SOURCE_DIR}/lib/angelscript/include
+	${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}
+)
+	

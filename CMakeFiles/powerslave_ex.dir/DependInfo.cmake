@@ -85,6 +85,21 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "lib/angelscript/sdk/angelscript/include"
   "FFMPEG_DIR"
   "lib/ffmpeg/FFmpeg-n2.7.2"
+  "source"
+  "source/framework"
+  "source/game"
+  "source/math"
+  "source/movie"
+  "source/opengl"
+  "source/renderer"
+  "source/script"
+  "source/script/objects"
+  "source/script/al"
+  "source/system"
+  "source/system/sdl"
+  "source/tools"
+  "source/tools/mapEditor"
+  "lib/angelscript/include"
   )
 
 # Targets to which this target links.
