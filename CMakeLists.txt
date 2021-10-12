@@ -36,8 +36,7 @@ else()
 	SET(CMAKE_CXX_COMPILER "/usr/local/vitasdk/bin/arm-vita-eabi-g++")
 	add_compile_options( 
 		-mtune=cortex-a9 
-		#-Wl,-q 
-		-L. -lbar
+		-Wl,-q 
 		-O2 
 		-ftree-vectorize 
 		-fomit-frame-pointer 
@@ -77,4 +76,12 @@ add_compile_options(
 
 include("CMakeFiles/angelscript.cmake")
 include("CMakeFiles/powerslave.cmake")
+
+execute_process (
+    COMMAND bash -c "make/obj.sh"
+    OUTPUT_VARIABLE OBJS
+)
+
+
+
 

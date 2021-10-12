@@ -226,26 +226,14 @@ find_library(SWRESAMPLE_LIB
              )
 
 
-execute_process (
-    COMMAND bash -c "make/obj.sh"
-    OUTPUT_VARIABLE OBJS
-)
-
-
-
-
 add_executable(powerslave_ex ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
-add_dependencies(powerslave_ex angelscript)
+
 target_link_libraries(powerslave_ex ${ANGELSCRIPT_LIB})
 target_link_libraries(powerslave_ex ${AVUTIL_LIB})
 target_link_libraries(powerslave_ex ${AVCODEC_LIB})
 target_link_libraries(powerslave_ex ${AVFORMAT_LIB})
 target_link_libraries(powerslave_ex ${SWSCALE_LIB})
 target_link_libraries(powerslave_ex ${SWRESAMPLE_LIB})
-
-
-
-
 
 
 include_directories(

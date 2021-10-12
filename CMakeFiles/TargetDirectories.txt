@@ -1,0 +1,4 @@
+/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/rebuild_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/edit_cache.dir
+/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/powerslave_ex.dir
+/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles/angelscript.dir

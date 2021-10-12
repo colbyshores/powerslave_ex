@@ -7,7 +7,3 @@ game_data*
 *.swp
 *.o
 *.~
-.c.*
-.h.*
-CMakeFiles/Progress
-CMakeFiles/Progress/*
