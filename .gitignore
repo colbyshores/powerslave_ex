@@ -11,10 +11,6 @@ game_data*
 .h.*
 CMakeFiles/Progress
 CMakeFiles/Progress/*
-CMakeFiles/3.16.3/CompilerIdCXX/CMakeCXXCompilerId.cpp
-CMakeFiles/CMakeDirectoryInformation.cmake
 CMakeFiles/*.log
 CMakeFiles/*.log
-CMakeFiles/Makefile.cmake
-CMakeFiles/Makefile2
 .gitignore
