@@ -18,13 +18,13 @@
 ANGELSCRIPT_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/angelscript/lib/libangelscript.a
 
 //Path to a library.
-AVCODEC_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/ffmpeg/FFmpeg-n2.7.2/libavcodec/libavcodec.a
+AVCODEC_LIB:FILEPATH=/usr/local/vitasdk/arm-vita-eabi/lib/libavcodec.a
 
 //Path to a library.
-AVFORMAT_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/ffmpeg/FFmpeg-n2.7.2/libavformat/libavformat.a
+AVFORMAT_LIB:FILEPATH=/usr/local/vitasdk/arm-vita-eabi/lib/libavformat.a
 
 //Path to a library.
-AVUTIL_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/ffmpeg/FFmpeg-n2.7.2/libavutil/libavutil.a
+AVUTIL_LIB:FILEPATH=/usr/local/vitasdk/arm-vita-eabi/lib/libavutil.a
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -228,10 +228,10 @@ Powerslave_BINARY_DIR:STATIC=/home/cole/Documents/GitHub/powerslave_ex
 Powerslave_SOURCE_DIR:STATIC=/home/cole/Documents/GitHub/powerslave_ex
 
 //Path to a library.
-SWRESAMPLE_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/ffmpeg/FFmpeg-n2.7.2/libswresample/libswresample.a
+SWRESAMPLE_LIB:FILEPATH=/usr/local/vitasdk/arm-vita-eabi/lib/libswresample.a
 
 //Path to a library.
-SWSCALE_LIB:FILEPATH=/home/cole/Documents/GitHub/powerslave_ex/lib/ffmpeg/FFmpeg-n2.7.2/libswscale/libswscale.a
+SWSCALE_LIB:FILEPATH=/usr/local/vitasdk/arm-vita-eabi/lib/libswscale.a
 
 //Dependencies for the target
 angelscript_LIB_DEPENDS:STATIC=general;-lpthread;

@@ -9,8 +9,5 @@ game_data*
 *.~
 .c.*
 .h.*
-CMakeFiles/Progress
-CMakeFiles/Progress/*
-CMakeFiles/*.log
-CMakeFiles/*.log
+CMakeFiles/
 .gitignore

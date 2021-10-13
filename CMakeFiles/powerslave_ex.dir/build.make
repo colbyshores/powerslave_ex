@@ -1145,11 +1145,11 @@ powerslave_ex: CMakeFiles/powerslave_ex.dir/source/tools/dataConvert.cpp.o
 powerslave_ex: CMakeFiles/powerslave_ex.dir/source/tools/spriteMake.cpp.o
 powerslave_ex: CMakeFiles/powerslave_ex.dir/build.make
 powerslave_ex: lib/angelscript/lib/libangelscript.a
-powerslave_ex: lib/ffmpeg/FFmpeg-n2.7.2/libavutil/libavutil.a
-powerslave_ex: lib/ffmpeg/FFmpeg-n2.7.2/libavcodec/libavcodec.a
-powerslave_ex: lib/ffmpeg/FFmpeg-n2.7.2/libavformat/libavformat.a
-powerslave_ex: lib/ffmpeg/FFmpeg-n2.7.2/libswscale/libswscale.a
-powerslave_ex: lib/ffmpeg/FFmpeg-n2.7.2/libswresample/libswresample.a
+powerslave_ex: /usr/local/vitasdk/arm-vita-eabi/lib/libavutil.a
+powerslave_ex: /usr/local/vitasdk/arm-vita-eabi/lib/libavcodec.a
+powerslave_ex: /usr/local/vitasdk/arm-vita-eabi/lib/libavformat.a
+powerslave_ex: /usr/local/vitasdk/arm-vita-eabi/lib/libswscale.a
+powerslave_ex: /usr/local/vitasdk/arm-vita-eabi/lib/libswresample.a
 powerslave_ex: CMakeFiles/powerslave_ex.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cole/Documents/GitHub/powerslave_ex/CMakeFiles --progress-num=$(CMAKE_PROGRESS_73) "Linking CXX executable powerslave_ex"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/powerslave_ex.dir/link.txt --verbose=$(VERBOSE)

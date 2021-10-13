@@ -225,8 +225,9 @@ find_library(SWRESAMPLE_LIB
              HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample/
              )
 
+SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
 
-add_executable(powerslave_ex ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
+add_executable(powerslave_ex ${OBJ} ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
 
 
 add_dependencies(powerslave_ex angelscript)

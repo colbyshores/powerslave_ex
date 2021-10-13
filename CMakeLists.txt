@@ -8,7 +8,28 @@ SET(FFMPEG_VERSION "n2.7.2")
 
 
 
-SET(GCC_COMPILE_LINK_FLAGS    "-static -lpng -logg -lvorbisfile -lopenal -lSDL2 -lz -Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil -Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec -Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat -Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale -Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample -lavutil -lavcodec -lavformat -lswscale -lswresample -lstdc++ -lpthread -lm")
+add_link_options(
+	#-lGL
+	-lpng 
+	-logg 
+	-lvorbisfile 
+	-lopenal 
+	-lSDL2 
+	-lz 
+	#-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil 
+	#-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec 
+	#-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat 
+	#-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale 
+	#-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample 
+	-lavutil 
+	-lavcodec 
+	-lavformat 
+	-lswscale 
+	-lswresample 
+	-lstdc++ 
+	-lpthread 
+	-lm
+)
 
 
 macro(use_cxx11)
@@ -34,7 +55,8 @@ if(!VITA)
 	SET(CMAKE_CXX_COMPILER "/usr/bin/g++")
 else()
 	SET(CMAKE_CXX_COMPILER "/usr/local/vitasdk/bin/arm-vita-eabi-g++")
-	add_compile_options( 
+	add_compile_options(
+	        -static	
 		-mtune=cortex-a9 
 		-Wl,-q 
 		-O2 
@@ -74,8 +96,8 @@ add_compile_options(
 )
 
 
-include("CMakeFiles/angelscript.cmake")
-include("CMakeFiles/powerslave.cmake")
+include("make/angelscript.cmake")
+include("make/powerslave.cmake")
 
 execute_process (
     COMMAND bash -c "make/obj.sh"
