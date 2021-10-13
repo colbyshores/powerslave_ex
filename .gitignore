@@ -11,5 +11,6 @@ game_data*
 .h.*
 CMakeFiles
 CMakeCache
+cmake_install.cmake
 Makefile
 .gitignore
