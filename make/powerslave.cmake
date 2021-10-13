@@ -224,12 +224,17 @@ find_library(SWRESAMPLE_LIB
              NAMES libswresample.a
              HINTS ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample/
              )
-
+find_library(SDL2_LIB
+	     NAMES libSDL2.a
+	     HINTS /usr/local/vitasdk/arm-vita-eabi/lib/
+            )
+find_library(VITAGL_LIB
+	     NAMES libvitaGL.a
+             HINTS /usr/local/vitasdk/arm-vita-eabi/lib/
+            )
 SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
 
 add_executable(powerslave_ex ${OBJ} ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
-
-
 add_dependencies(powerslave_ex angelscript)
 
 
@@ -239,6 +244,63 @@ target_link_libraries(powerslave_ex ${AVCODEC_LIB})
 target_link_libraries(powerslave_ex ${AVFORMAT_LIB})
 target_link_libraries(powerslave_ex ${SWSCALE_LIB})
 target_link_libraries(powerslave_ex ${SWRESAMPLE_LIB})
+
+target_link_libraries(powerslave_ex ${SDL2_LIB})
+target_link_libraries(powerslave_ex ${VITAGL_LIB})
+
+
+
+
+
+
+
+
+
+
+#message(STATUS "<<${SDL2_INCLUDE_DIR}>>")
+
+
+#target_link_libraries(powerslave_ex ${SDL2_LIBRARIES})
+#target_link_libraries(powerslave_ex ${OPENGLES_LIBRARIES})
+
+
+
+
+
+
+
+
+add_link_options(
+        #-lGL
+        -lpng
+        -logg
+        -lvorbisfile
+        -lopenal
+        -lSDL2
+        -lz
+        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil 
+        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec 
+        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat 
+        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale 
+        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample 
+        -lavutil
+        -lavcodec
+        -lavformat
+        -lswscale
+        -lswresample
+        -lstdc++
+        -lpthread
+        -lm
+)
+
+
+
+
+
+
+
+
+
 
 
 include_directories(
