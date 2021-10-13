@@ -252,7 +252,14 @@ find_library(VITAGL_LIB
             )
 
 set(THREADS_PREFER_PTHREAD_FLAG true)
-find_package(Threads REQUIRED)
+
+
+
+
+#for x86 installations
+#find_package(Threads REQUIRED)
+
+
 
 
 
