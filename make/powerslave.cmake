@@ -193,6 +193,24 @@ set(POWERSLAVE_HEADERS
 	${PROJECT_SOURCE_DIR}/source/tools/spriteMake.h 
 )
 
+include_directories(
+        ${PROJECT_SOURCE_DIR}/source
+        ${PROJECT_SOURCE_DIR}/source/framework
+        ${PROJECT_SOURCE_DIR}/source/game
+        ${PROJECT_SOURCE_DIR}/source/math
+        ${PROJECT_SOURCE_DIR}/source/movie
+        ${PROJECT_SOURCE_DIR}/source/opengl
+        ${PROJECT_SOURCE_DIR}/source/renderer
+        ${PROJECT_SOURCE_DIR}/source/script
+        ${PROJECT_SOURCE_DIR}/source/script/objects
+        ${PROJECT_SOURCE_DIR}/source/script/al
+        ${PROJECT_SOURCE_DIR}/source/system
+        ${PROJECT_SOURCE_DIR}/source/system/sdl
+        ${PROJECT_SOURCE_DIR}/source/tools
+        ${PROJECT_SOURCE_DIR}/source/tools/mapEditor
+        ${PROJECT_SOURCE_DIR}/lib/angelscript/include
+        ${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}
+)
 
 include_directories(ANGELSCRIPT_DIR "${PROJECT_SOURCE_DIR}/lib/angelscript/sdk/angelscript/include")
 include_directories(FFMPEG_DIR "${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}")
@@ -232,11 +250,17 @@ find_library(VITAGL_LIB
 	     NAMES libvitaGL.a
              HINTS /usr/local/vitasdk/arm-vita-eabi/lib/
             )
+
+set(THREADS_PREFER_PTHREAD_FLAG true)
+find_package(Threads REQUIRED)
+
+
+
 SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -lpng -logg -lvorbisfile -lopenal -lSDL2 -lz -lavutil -lavcodec -lavformat -lswscale -lswresample -lstdc++ -lm")
 
 add_executable(powerslave_ex ${OBJ} ${POWERSLAVE_SOURCE} ${POWERSLAVE_HEADERS} ${FFMPEG_DIR} ${ANGELSCRIPT_DIR})
 add_dependencies(powerslave_ex angelscript)
-
 
 target_link_libraries(powerslave_ex ${ANGELSCRIPT_LIB})
 target_link_libraries(powerslave_ex ${AVUTIL_LIB})
@@ -244,81 +268,12 @@ target_link_libraries(powerslave_ex ${AVCODEC_LIB})
 target_link_libraries(powerslave_ex ${AVFORMAT_LIB})
 target_link_libraries(powerslave_ex ${SWSCALE_LIB})
 target_link_libraries(powerslave_ex ${SWRESAMPLE_LIB})
-
 target_link_libraries(powerslave_ex ${SDL2_LIB})
 target_link_libraries(powerslave_ex ${VITAGL_LIB})
+target_link_libraries(powerslave_ex Threads::Threads)
 
 
 
 
 
-
-
-
-
-
-#message(STATUS "<<${SDL2_INCLUDE_DIR}>>")
-
-
-#target_link_libraries(powerslave_ex ${SDL2_LIBRARIES})
-#target_link_libraries(powerslave_ex ${OPENGLES_LIBRARIES})
-
-
-
-
-
-
-
-
-add_link_options(
-        #-lGL
-        -lpng
-        -logg
-        -lvorbisfile
-        -lopenal
-        -lSDL2
-        -lz
-        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavutil 
-        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavcodec 
-        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libavformat 
-        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswscale 
-        #-Llib/ffmpeg/FFmpeg-${FFMPEG_VERSION}/libswresample 
-        -lavutil
-        -lavcodec
-        -lavformat
-        -lswscale
-        -lswresample
-        -lstdc++
-        -lpthread
-        -lm
-)
-
-
-
-
-
-
-
-
-
-
-
-include_directories(
-	${PROJECT_SOURCE_DIR}/source
-	${PROJECT_SOURCE_DIR}/source/framework
-	${PROJECT_SOURCE_DIR}/source/game
-	${PROJECT_SOURCE_DIR}/source/math
-	${PROJECT_SOURCE_DIR}/source/movie
-	${PROJECT_SOURCE_DIR}/source/opengl
-	${PROJECT_SOURCE_DIR}/source/renderer
-	${PROJECT_SOURCE_DIR}/source/script
-	${PROJECT_SOURCE_DIR}/source/script/objects
-	${PROJECT_SOURCE_DIR}/source/script/al
-	${PROJECT_SOURCE_DIR}/source/system
-	${PROJECT_SOURCE_DIR}/source/system/sdl
-	${PROJECT_SOURCE_DIR}/source/tools
-	${PROJECT_SOURCE_DIR}/source/tools/mapEditor
-	${PROJECT_SOURCE_DIR}/lib/angelscript/include
-	${PROJECT_SOURCE_DIR}/lib/ffmpeg/FFmpeg-${FFMPEG_VERSION}
-)
 	
